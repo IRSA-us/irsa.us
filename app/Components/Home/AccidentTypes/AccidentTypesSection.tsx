@@ -54,9 +54,9 @@ const AccidentTypesSection = ({ type, examples, imgPath }: Params) => {
             <div className="w-full h-full flex items-center justify-center relative">
                 <AccidentTypesCover src={imgPath} />
                 <div className="w-full flex justify-between items-center absolute px-2 lg:px-4">
-                    <h2 className="w-3/4 text-xl lg:text-3xl text-left">
+                    <p className="text-secondary w-3/4 text-xl lg:text-3xl text-left">
                         {type}
-                    </h2>
+                    </p>
                     <AccidentTypesButton
                         onClick={() => setExpanded((prev) => !prev)}
                     />
