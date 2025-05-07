@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
     const [panelOut, setPanelOut] = useState(false);
     const pathname = usePathname();
+    const layer1path = pathname.split("/")[1];
     const panelRef = useRef<HTMLDivElement>(null);
 
     // Close on reroute
@@ -46,10 +47,13 @@ const NavBar = () => {
                         <Image src={"/logo/darkLogo.png"} alt="IRSA" fill />
                     </Link>
                 </div>
-                <p className="hidden md:inline text-2xl">
+                <h1 className="hidden md:inline text-2xl">
                     Institute of Risk and Safety Analysis
-                </p>
-                <button onClick={() => setPanelOut(!panelOut)}>
+                </h1>
+                <button
+                    onClick={() => setPanelOut(!panelOut)}
+                    className="h-8/10 aspect-square flex justify-end items-center"
+                >
                     <div
                         className={`transition-transform duration-300 ${
                             panelOut ? "rotate-[-90deg]" : "rotate-0"

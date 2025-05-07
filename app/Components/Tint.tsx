@@ -1,6 +1,12 @@
-const Tint = ({ className = "" }: { className?: string }) => {
+const Tint = ({
+    className = "",
+    alpha = 0.7,
+}: {
+    className?: string;
+    alpha?: number;
+}) => {
     const tintStyle: React.CSSProperties = {
-        backgroundColor: "rgba(0, 0, 0, 0.7)",
+        backgroundColor: `rgba(0, 0, 0, ${alpha})`,
         backdropFilter: "blur(0.01rem)",
         WebkitBackdropFilter: "blur(0.01rem)",
         position: "absolute",

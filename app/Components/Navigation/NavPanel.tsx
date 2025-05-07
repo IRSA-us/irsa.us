@@ -28,9 +28,9 @@ const NavPanel = forwardRef<HTMLDivElement, { show: boolean }>(
                         {pages.map((page) => (
                             <li key={page.label} className="w-full">
                                 <Link href={page.href}>
-                                    <p className="mb-5 md:mb-6 text-3xl md:text-5xl hover:text-slate-700 transition-colors duration-200">
+                                    <h1 className="mb-5 md:mb-6 text-3xl md:text-5xl hover:text-slate-700 transition-colors duration-200">
                                         {page.label}
-                                    </p>
+                                    </h1>
                                 </Link>
                                 <div className="mb-5 md:mb-6 h-[2px] w-full md:w-7/10 bg-white" />
                             </li>

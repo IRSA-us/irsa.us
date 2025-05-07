@@ -2,15 +2,17 @@
 import React from "react";
 import classNames from "classnames";
 import "./ButtonStyles.css";
+import Link from "next/link";
 
 interface Params {
     text: string;
     primary?: boolean;
+    href: string;
 }
 
-const Button = ({ text, primary = false }: Params) => {
+const Button = ({ text, primary = false, href }: Params) => {
     return (
-        <button
+        <Link
             className={classNames({
                 "border-2 rounded-md flex items-center justify-center font-bold":
                     true,
@@ -19,9 +21,10 @@ const Button = ({ text, primary = false }: Params) => {
                 defaultButton: !primary,
                 primaryButton: primary,
             })}
+            href={href}
         >
             <p className="lg:text-xl">{text}</p>
-        </button>
+        </Link>
     );
 };
 

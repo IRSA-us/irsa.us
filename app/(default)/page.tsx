@@ -1,8 +1,9 @@
-import PanelDivider from "./Components/Home/PanelDivider";
-import TitleSlideshow from "./Components/Home/TitleSlideshow";
-import "./Components/Home/HomeStyles.css";
-import StatsBar from "./Components/Home/StatsBar";
-import HomePageDescription from "./Components/Home/HomePageDescription";
+import PanelDivider from "../Components/Home/PanelDivider";
+import TitleSlideshow from "../Components/Home/TitleSlideshow";
+import "../Components/Home/HomeStyles.css";
+import StatsBar from "../Components/Home/StatsBar";
+import HomePageDescription from "../Components/Home/HomePageDescription";
+import Tint from "../Components/Tint";
 
 export default function Home() {
     return (
@@ -15,10 +16,8 @@ export default function Home() {
                 <StatsBar />
             </div>
 
-            <div
-                className="w-full flex flex-col items-center gap-y-20"
-                style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
-            >
+            <div className="relative w-full flex flex-col items-center gap-y-20">
+                <Tint className="-z-100" alpha={0.5} />
                 <PanelDivider height={3} />
 
                 <div className="w-8/10 lg:w-6/10">

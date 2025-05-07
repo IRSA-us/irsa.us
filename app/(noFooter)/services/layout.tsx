@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import NavBar from "./Navigation/NavBar";
-import "./globals.css";
+import NavBar from "../../Components/Navigation/NavBar";
+import "../../globals.css";
 
 export const metadata: Metadata = {
     title: "IRSA",
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         "Institute of Risk and Safety Analysis. Expert Witness. Expert Witnesses. Forensics. Forensic Science. Accident Reconstruction.",
 };
 
-export default function RootLayout({
+export default async function NoFooterLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
@@ -20,7 +20,6 @@ export default function RootLayout({
                     <NavBar />
                 </header>
                 <main>{children}</main>
-                <footer className="mt-100">Footer</footer>
             </body>
         </html>
     );

@@ -26,10 +26,10 @@ const TitleSlideshow = async () => {
                         elit. Eum, omnis!
                     </p>
                     <div className="grid grid-cols-2 grid-rows-2 gap-x-5 gap-y-4 justify-items-center">
-                        <Button text="Experts" />
-                        <Button text="Services" />
+                        <Button text="Experts" href="/experts" />
+                        <Button text="Services" href="/services" />
                         <div className="col-span-2">
-                            <Button text="Inquire" primary />
+                            <Button text="Inquire" href="/contact" primary />
                         </div>
                     </div>
                 </div>

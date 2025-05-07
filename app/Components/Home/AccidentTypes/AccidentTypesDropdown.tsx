@@ -1,7 +1,7 @@
 import classNames from "classnames";
 
 const defaultStyles = classNames(
-    "w-95/100 self-start -z-10 tintedPanel rounded-t-none! rounded-b-[4px]!"
+    "w-95/100 self-start -z-1 tintedPanel rounded-t-none! rounded-b-[4px]!"
 );
 const transitionStyles = classNames("transition-all duration-300 ease-in-out");
 
