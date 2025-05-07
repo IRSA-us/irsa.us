@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "name": "3D Scanning",
+            "description": "",
+            "imgPath": "/image/services/3d1.jpg"
+        },
+        {
+            "name": "Accident Reconstruction",
+            "description": "",
+            "imgPath": "/image/services/accident_recon1.jpg"
+        },
+        {
+            "name": "Biomechanics",
+            "description": "",
+            "imgPath": "/image/services/biomechanics1.jpg"
+        },
+        {
+            "name": "Animations",
+            "description": "",
+            "imgPath": "/image/services/animations1.jpg"
+        },
+        {
+            "name": "Human Factors",
+            "description": "",
+            "imgPath": "/image/services/human_factors1.png"
+        },
+        {
+            "name": "Premises Liability",
+            "description": "",
+            "imgPath":  "/image/services/premises1.jpg"
+        }
+    ]
+}
