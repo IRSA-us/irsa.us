@@ -17,7 +17,7 @@ export default function Home() {
 
             <div
                 className="w-full flex flex-col items-center gap-y-20"
-                style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+                style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
             >
                 <PanelDivider height={3} />
 
