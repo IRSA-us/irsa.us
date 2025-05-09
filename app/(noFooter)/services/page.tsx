@@ -6,16 +6,15 @@ import Link from "next/link";
 interface Service {
     serviceID: string;
     name: string;
-    description: string;
     imgPath: string;
 }
 
 const ServicesPage = async () => {
-    const file = await fs.readFile(
+    const serviceData = await fs.readFile(
         process.cwd() + "/app/data/services.json",
         "utf-8"
     );
-    const services: Service[] = JSON.parse(file).services;
+    const services: Service[] = JSON.parse(serviceData).services;
 
     return (
         <>
@@ -37,7 +36,7 @@ const ServicesPage = async () => {
                     >
                         <div className="group relative w-full h-[500px] md:w-[550px] md:h-[300px] border-1 border-white">
                             <Image
-                                src={service.imgPath}
+                                src={service.imgPath + "cover.jpg"}
                                 fill
                                 style={{ objectFit: "cover" }}
                                 alt={service.name}

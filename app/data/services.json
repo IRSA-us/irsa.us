@@ -1,40 +1,34 @@
 {
     "services": [
         {
-            "serviceID": "3D",
+            "serviceID": "threeD",
             "name": "3D Scanning",
-            "description": "",
-            "imgPath": "/image/services/3d1.jpg"
+            "imgPath": "/image/services/3d/"
         },
         {
-            "serviceID": "accident-reconstruction",
+            "serviceID": "accident_recon",
             "name": "Accident Reconstruction",
-            "description": "",
-            "imgPath": "/image/services/accident_recon1.jpg"
+            "imgPath": "/image/services/accident_recon/"
         },
         {
             "serviceID": "biomechanics",
             "name": "Biomechanics",
-            "description": "",
-            "imgPath": "/image/services/biomechanics1.jpg"
+            "imgPath": "/image/services/biomechanics/"
         },
         {
             "serviceID": "animations",
             "name": "Animations",
-            "description": "",
-            "imgPath": "/image/services/animations1.jpg"
+            "imgPath": "/image/services/animations/"
         },
         {
-            "serviceID": "human-factors",
+            "serviceID": "human_factors",
             "name": "Human Factors",
-            "description": "",
-            "imgPath": "/image/services/human_factors1.png"
+            "imgPath": "/image/services/human_factors/"
         },
         {
-            "serviceID": "premises-liability",
+            "serviceID": "premises",
             "name": "Premises Liability",
-            "description": "",
-            "imgPath":  "/image/services/premises1.jpg"
+            "imgPath":  "/image/services/premises/"
         }
     ]
 }
