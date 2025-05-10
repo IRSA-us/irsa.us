@@ -18,7 +18,7 @@ const ServicesPage = async () => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 w-screen hidden h-[600px] md:flex items-center justify-center">
+            <div className="fixed top-0 left-0 w-screen hidden h-[650px] md:flex items-center justify-center">
                 <Image
                     src="/image/services/services_page_backdrop.jpg"
                     fill
@@ -28,7 +28,7 @@ const ServicesPage = async () => {
                 <Tint alpha={0.7} />
                 <h1 className="text-7xl z-10">Services</h1>
             </div>
-            <div className="w-full flex flex-col md:flex-row pt-[100px] md:pt-[600px]">
+            <div className="w-full flex flex-col md:flex-row pt-[100px] md:pt-[650px]">
                 {services.map((service) => (
                     <Link
                         href={"/services/" + service.serviceID}

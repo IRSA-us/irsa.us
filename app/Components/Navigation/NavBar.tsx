@@ -47,12 +47,12 @@ const NavBar = () => {
                         <Image src={"/logo/darkLogo.png"} alt="IRSA" fill />
                     </Link>
                 </div>
-                <h1 className="hidden md:inline text-2xl">
+                <h1 className="hidden md:inline text-center text-2xl text-[var(--alt-color)]">
                     Institute of Risk and Safety Analysis
                 </h1>
                 <button
                     onClick={() => setPanelOut(!panelOut)}
-                    className="h-8/10 aspect-square flex justify-end items-center"
+                    className="flex justify-center items-center"
                 >
                     <div
                         className={`transition-transform duration-300 ${

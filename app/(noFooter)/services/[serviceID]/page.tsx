@@ -27,15 +27,15 @@ const ServicePage = async ({ params }: Props) => {
 
     return (
         <>
-            <div className="relative w-full h-[500px] flex items-center justify-center">
+            <div className="relative w-full h-[750px] flex items-center justify-center">
                 <Image
                     src={mainImageFP}
                     fill
                     alt={serviceID + " Page Main Image"}
                     style={{ objectFit: "cover" }}
                 />
-                <Tint alpha={0.5} />
-                <h1 className="text-5xl z-1 pt-[100px] text-center">
+                <Tint alpha={0.7} />
+                <h1 className="text-5xl md:text-7xl z-1 pt-[100px] text-center">
                     {serviceTitle}
                 </h1>
             </div>
