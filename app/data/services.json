@@ -2,6 +2,7 @@
     "services": [
         {
             "serviceID": "threeD",
+            "subtitle": "Trucks, Cars, Buildings, Premises, Crime Scenes, etc.",
             "name": "3D Scanning",
             "imgPath": "/image/services/threeD/"
         },
@@ -29,6 +30,11 @@
             "serviceID": "premises",
             "name": "Premises Liability",
             "imgPath":  "/image/services/premises/"
+        },
+        {
+            "serviceID": "cdr",
+            "name": "Crash Data Retrieval",
+            "imgPath":  "/image/services/cdr/"
         }
     ]
 }

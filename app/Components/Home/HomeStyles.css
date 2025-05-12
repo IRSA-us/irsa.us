@@ -10,13 +10,6 @@
     }
 }
 
-.tintedPanel {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
-    outline: solid 1px var(--gold);
-    box-shadow: 0 0 8px var(--gold);
-}
-
 .gauge {
     width: var(--gauge-width);
     aspect-ratio: 1;
@@ -29,13 +22,4 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.divider {
-    background-color: var(--gold);
-    opacity: 0.4;
-}
-
-p {
-    font-weight: bold;
 }

@@ -2,7 +2,7 @@
 
 :root {
   --alt-color: theme(--color-green-500);
-  --alt-color-dark:  theme(--color-green-700);
+  --alt-color-dark: theme(--color-green-700);
   --gold: rgb(253, 172, 22);
   font-family: "Arial";
 }
@@ -25,6 +25,13 @@ body {
 
 .slideShowContainer {
   box-shadow: 0 0 15px white;
+}
+
+.tintedPanel {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    outline: solid 1px var(--gold);
+    box-shadow: 0 0 8px var(--gold);
 }
 
 h1 {
