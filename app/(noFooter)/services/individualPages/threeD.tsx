@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const threeD = () => {
   return (
-    <div className="tintedPanel flex flex-col items-center gap-10 py-20 px-80">
-      <p className="font-bold text-2xl text-center">
+    <div className="tintedPanel flex flex-col items-center gap-10 py-20 px-10 md:px-30 2xl:px-80">
+      <p className="font-bold text-lg md:text-2xl text-center">
         3D scanning is a vital tool in Forensic Science, allowing for a digital
         or physical representation of an environment, object, scene, or event
         that is much easier for viewers to process and use than the actual
@@ -20,7 +20,7 @@ const threeD = () => {
         style={{ height: "500px", width: "auto" }}
       />
 
-      <p className="font-bold text-2xl">
+      <p className="font-bold text-lg md:text-2xl">
         Our Lab utilizes multiple enterprise-level 3D LiDAR scanners to provide
         accurate and detailed scans. In conjunction with sophisticated rendering
         software and 3D scale modeling hardware, our engineers provide the
@@ -29,7 +29,7 @@ const threeD = () => {
 
       <PanelDivider />
 
-      <p className="font-bold text-3xl">
+      <p className="font-bold text-lg md:text-3xl">
         Below is a raw scan of a crash scene from a hit and run case.
       </p>
 
@@ -39,8 +39,8 @@ const threeD = () => {
         height={0}
         width={0}
         style={{
-          height: "700px",
-          width: "auto",
+          height: "auto",
+          width: "100%",
           boxShadow: "0 0 20px var(--gold), 0 0 30px white",
         }}
         className="rounded-2xl mb-10"
@@ -48,10 +48,14 @@ const threeD = () => {
 
       <PanelDivider />
 
-      <div className="w-full h-[400px] flex items-center gap-20">
-        <p className="font-old text-xl">
-          To the right is the Faro Focus X330 3D scanners, one of the devices
-          our Lab utilizes. The scanner provides very precise mappings of its
+      <div className="w-full flex flex-col xl:flex-row items-center gap-5 md:gap-20">
+        <p className="text-sm md:text-lg xl:text-lg">
+          <>
+            <span className="xl:hidden">Below</span>
+            <span className="hidden xl:inline">To the right</span>
+          </>{" "}
+          is the Faro Focus X330 3D scanners, one of the devices our Lab
+          utilizes. The scanner provides very precise mappings of its
           environment. First, the laser scanner emits a laser beam from a
           rotating mirror out towards the area being scanned. Then, the unit
           distributes the laser beam to a vertical range of 300° and a
@@ -66,9 +70,25 @@ const threeD = () => {
           src="/image/services/threeD/focusX330.jpg"
           alt="Scanner Diagram"
           height={0}
-          width={300}
-          style={{ height: "350px", width: "auto" }}
-          className="rounded-lg"
+          width={500}
+          style={{
+            height: "auto",
+            width: "100%",
+            boxShadow: "0 0 15px white",
+          }}
+          className="rounded-lg xl:hidden"
+        />
+        <Image
+          src="/image/services/threeD/focusX330.jpg"
+          alt="Scanner Diagram"
+          height={0}
+          width={500}
+          style={{
+            height: "auto",
+            width: "400px",
+            boxShadow: "0 0 15px white",
+          }}
+          className="rounded-lg hidden xl:block"
         />
       </div>
     </div>

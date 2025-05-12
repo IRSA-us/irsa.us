@@ -38,10 +38,10 @@ const ServicePage = async ({ params }: Props) => {
           alt={serviceID + " Page Main Image"}
           style={{ objectFit: "cover" }}
         />
-        <Tint alpha={0.7} />
+        <Tint alpha={0.75} />
         <div className="z-1 pt-[100px] flex flex-col items-center gap-10">
           <h1 className="text-5xl md:text-7xl text-center">{serviceTitle}</h1>
-          <h2 className="text-md md:text-3xl text-center text-[var(--gold)] font-bold">
+          <h2 className="text-md md:text-2xl text-center text-[var(--gold)] font-bold">
             {serviceSubTitle}
           </h2>
         </div>
