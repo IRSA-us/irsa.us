@@ -1,5 +1,6 @@
 import PanelDivider from "@/app/Components/Home/PanelDivider";
 import Image from "next/image";
+import ThreeDEmbedding from "./threeDEmbedding";
 
 const modelData = [
   {
@@ -58,7 +59,7 @@ const threeD = () => {
         crash scene from a hit and run case.
       </p>
 
-      <Image
+      {/* <Image
         src="/image/services/threeD/rawScan.jpg"
         alt="Raw Scan Example"
         height={0}
@@ -69,7 +70,26 @@ const threeD = () => {
           boxShadow: "0 0 20px var(--gold), 0 0 30px white",
         }}
         className="rounded-2xl"
-      />
+      /> */}
+
+      <div
+        className="relative w-full h-[30vw] min-h-[300px]"
+        style={{
+          boxShadow: "0 0 10px white",
+          borderRadius: "20px",
+          overflow: "hidden",
+        }}
+      >
+        <Image
+          src="/image/threeDControlLegend.png"
+          height={0}
+          width={200}
+          style={{ width: "20%", height: "auto" }}
+          className="absolute m-5 z-10"
+          alt="LMB, RMB, Scroll"
+        />
+        <ThreeDEmbedding />
+      </div>
 
       <PanelDivider height={1} />
 
