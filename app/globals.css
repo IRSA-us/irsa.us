@@ -4,6 +4,7 @@
   --alt-color: theme(--color-green-500);
   --alt-color-dark: theme(--color-green-700);
   --gold: rgb(253, 172, 22);
+  --dark-gold: rgb(110, 76, 12);
   font-family: "Arial";
 }
 

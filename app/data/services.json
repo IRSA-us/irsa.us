@@ -35,6 +35,11 @@
             "serviceID": "cdr",
             "name": "Crash Data Retrieval",
             "imgPath":  "/image/services/cdr/"
+        },
+        {
+            "serviceID": "simulations",
+            "name": "Simulations",
+            "imgPath":  "/image/services/simulations/"
         }
     ]
 }

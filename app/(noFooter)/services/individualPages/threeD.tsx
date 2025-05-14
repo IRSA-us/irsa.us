@@ -1,4 +1,4 @@
-import PanelDivider from "@/app/Components/Home/PanelDivider";
+import PanelDivider from "@/app/Components/PanelDivider";
 import Image from "next/image";
 import ThreeDEmbedding from "./threeDEmbedding";
 
@@ -26,6 +26,8 @@ const threeD = () => {
     <div className="tintedPanel flex flex-col items-center gap-10 py-20 px-10 md:px-30 2xl:px-80">
       <h1 className="text-4xl text-center text-[var(--gold)]">3D Scanning</h1>
 
+      <PanelDivider />
+
       <p className="font-bold text-lg md:text-2xl text-center">
         3D scanning is a vital tool in Forensic Science, allowing for a{" "}
         <span className="text-[var(--gold)]"> digital</span> or
@@ -35,6 +37,8 @@ const threeD = () => {
         data is the primary prerequisite of creating high quality simulations,
         animations, diagrams, and models.
       </p>
+
+      <PanelDivider />
 
       <Image
         src="/image/services/threeD/scannerDiagram.png"
@@ -91,7 +95,7 @@ const threeD = () => {
         <ThreeDEmbedding />
       </div>
 
-      <PanelDivider height={1} />
+      <PanelDivider />
 
       <div className="w-full flex flex-col xl:flex-row items-center gap-5 md:gap-20">
         <p className="text-sm md:text-lg xl:text-lg">
@@ -137,9 +141,11 @@ const threeD = () => {
         />
       </div>
 
-      <h1 className="text-4xl text-center text-[var(--gold)] mt-20">
+      <h1 className="text-4xl text-center text-[var(--gold)] mt-40">
         3D Modeling
       </h1>
+
+      <PanelDivider />
 
       <p className="font-bold text-lg md:text-2xl text-center">
         A 3D Model is a scaled representation of a scene, which can be a vital
@@ -182,6 +188,7 @@ const threeD = () => {
           </div>
         ))}
       </div>
+      <PanelDivider />
     </div>
   );
 };

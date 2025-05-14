@@ -46,12 +46,13 @@ const ServicePage = async ({ params }: Props) => {
           </h2>
         </div>
       </div>
-      <div className="w-full p-10">
+      <div className="w-full p-5 md:p-10 lg:px-30">
         {PageContent ? (
           <PageContent />
         ) : (
           <div>
-            404 <span>{serviceID}</span> Service Not Found.
+            ERROR 404 <span className="text-[var(--gold)]">{serviceID}</span>{" "}
+            Service Not Found.
           </div>
         )}
       </div>
