@@ -1,7 +1,7 @@
 import PanelDivider from "@/app/Components/PanelDivider";
-import Image from "next/image";
 import ThreeDEmbedding from "./threeDEmbedding";
 import RouteLink from "@/app/Components/RouteLink";
+import Picture from "@/app/Components/Picture";
 
 const modelData = [
   {
@@ -52,12 +52,11 @@ const threeD = () => {
 
       <PanelDivider />
 
-      <Image
+      <Picture
         src="/image/services/threeD/scannerDiagram.png"
         alt="Scanner Diagram"
-        height={0}
-        width={500}
-        style={{ height: "500px", width: "auto" }}
+        className="shadow-none w-auto h-[500px]"
+        override
       />
 
       <p className="font-bold text-lg md:text-2xl">
@@ -96,13 +95,11 @@ const threeD = () => {
           overflow: "hidden",
         }}
       >
-        <Image
+        <Picture
           src="/image/threeDControlLegend.png"
-          height={0}
-          width={200}
-          style={{ width: "20%", height: "auto" }}
-          className="absolute m-5 z-10"
           alt="LMB, RMB, Scroll"
+          className="shadow-none w-[20%] h-auto absolute m-5 z-10"
+          override
         />
         <ThreeDEmbedding />
       </div>
@@ -127,29 +124,11 @@ const threeD = () => {
           via WLAN for calculating exact 3D renderings. The Forensic Scientists
           at IRSA are all trained in the proper operation of the 3D scanner.
         </p>
-        <Image
+        <Picture
           src="/image/services/threeD/focusX330.jpg"
-          alt="Scanner Diagram"
-          height={0}
-          width={500}
-          style={{
-            height: "auto",
-            width: "100%",
-            boxShadow: "0 0 15px white",
-          }}
-          className="rounded-lg xl:hidden"
-        />
-        <Image
-          src="/image/services/threeD/focusX330.jpg"
-          alt="Scanner Diagram"
-          height={0}
-          width={500}
-          style={{
-            height: "auto",
-            width: "400px",
-            boxShadow: "0 0 15px white",
-          }}
-          className="rounded-lg hidden xl:block"
+          alt="FARO Focus X330"
+          className="shadow-[0_0_15px_white] w-[100%] xl:w-[400px] h-auto rounded-[8px]"
+          override
         />
       </div>
 
@@ -172,29 +151,11 @@ const threeD = () => {
       <div className="flex flex-col gap-10">
         {modelData.map((model) => (
           <div className="flex flex-col gap-10 items-center" key={model.src}>
-            <Image
+            <Picture
               src={model.src}
-              height={0}
-              width={500}
-              style={{
-                height: "auto",
-                width: "50vw",
-                boxShadow: "0 0 15px white",
-              }}
               alt="3D Model Example"
-              className="rounded-lg xl:hidden"
-            />
-            <Image
-              src={model.src}
-              height={0}
-              width={500}
-              style={{
-                height: "auto",
-                width: "25vw",
-                boxShadow: "0 0 15px white",
-              }}
-              alt="3D Model Example"
-              className="rounded-lg hidden xl:block"
+              className="w-[100%] lg:w-7/10 h-auto"
+              override
             />
             <p className="text-xl text-center max-w-[800px]">{model.desc}</p>
           </div>

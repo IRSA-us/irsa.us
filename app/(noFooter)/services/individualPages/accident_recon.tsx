@@ -37,12 +37,12 @@ const accident_recon = () => {
         </ul>
         <PanelDivider />
 
-        <div className="w-full md:w-7/10 h-auto rounded-sm overflow-hidden shadow-[0_0_8px_white]">
+        <div className="w-full md:w-7/10 h-auto overflow-hidden shadow-[0_0_8px_white]">
           <Image
             src={"/image/services/accident_recon/crashSim.gif"}
             width={0}
             height={0}
-            style={{ width: "100%", height: "100%" }}
+            style={{ width: "100%", height: "100%", borderRadius: "8px" }}
             alt={"Crash Simulation"}
           />
         </div>

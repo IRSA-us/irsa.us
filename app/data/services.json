@@ -12,6 +12,11 @@
             "imgPath": "/image/services/accident_recon/"
         },
         {
+            "serviceID": "criminal",
+            "name": "Criminal Proceedings",
+            "imgPath": "/image/services/criminal/"
+        },
+        {
             "serviceID": "biomechanics",
             "name": "Biomechanics",
             "imgPath": "/image/services/biomechanics/"

@@ -31,4 +31,8 @@ export const serviceComponents: Record<string, React.ComponentType<any>> = {
     import("../(noFooter)/services/individualPages/simulations").then((mod) => (
       <mod.default />
     )),
+  criminal: () =>
+    import("../(noFooter)/services/individualPages/criminal").then((mod) => (
+      <mod.default />
+    )),
 };
