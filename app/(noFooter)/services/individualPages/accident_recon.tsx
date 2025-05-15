@@ -1,9 +1,8 @@
 import PanelDivider from "@/app/Components/PanelDivider";
 import RouteLink from "@/app/Components/RouteLink";
 import StyledList from "@/app/Components/StyledList";
-import YouTubeEmbed from "@/app/Components/YouTubeEmbed";
 import YouTubeEmbedx2 from "@/app/Components/YouTubeEmbedx2";
-import Link from "next/link";
+import Image from "next/image";
 
 const accidentTypes = [
   "Automotive/Transportation",
@@ -37,7 +36,17 @@ const accident_recon = () => {
           ))}
         </ul>
         <PanelDivider />
-        <div>Example Accident Recon</div>
+
+        <div className="w-full md:w-7/10 h-auto rounded-sm overflow-hidden shadow-[0_0_8px_white]">
+          <Image
+            src={"/image/services/accident_recon/crashSim.gif"}
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "100%" }}
+            alt={"Crash Simulation"}
+          />
+        </div>
+
         <p className="text-lg md:text-2xl text-center">
           The Lab has been involved in <StyledList items={["thousands"]} /> of
           traffic collision investigations. With extensive knowledge of{" "}
@@ -99,9 +108,7 @@ const accident_recon = () => {
           ]}
         />
 
-        <PanelDivider className="my-10" />
-
-        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl">
+        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl mt-30">
           Bicycle Accidents
         </h1>
         <p className="text-base md:text-xl md:mb-10 text-center">
@@ -132,9 +139,7 @@ const accident_recon = () => {
           ]}
         />
 
-        <PanelDivider className="my-10" />
-
-        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl">
+        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl mt-30">
           Motorcycle Accidents
         </h1>
         <p className="text-base md:text-xl md:mb-10 text-center">
@@ -189,9 +194,7 @@ const accident_recon = () => {
           ]}
         />
 
-        <PanelDivider className="my-10" />
-
-        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl">
+        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl mt-30">
           Pedestrian Accidents
         </h1>
         <p className="text-base md:text-xl md:mb-10 text-center">
@@ -227,9 +230,7 @@ const accident_recon = () => {
           ]}
         />
 
-        <PanelDivider className="my-10" />
-
-        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl text-center">
+        <h1 className="text-[var(--gold)] font-bold text-xl md:text-3xl text-center mt-30">
           Truck/Tractor Trailer Accidents
         </h1>
         <p className="text-base md:text-xl md:mb-10 text-center">
@@ -280,7 +281,7 @@ const accident_recon = () => {
           Construction sites, forklifts, cranes, pressure vessels, punch
           presses, rotating machinery, and radiation exposure.
         </p>
-        <p className="text-center mb-10">
+        <p className="text-center mb-10 md:text-xl">
           Accidents can occur anytime and anywhere. In regard to industrial
           accidents, we provide opinions that have been supported by
           <StyledList

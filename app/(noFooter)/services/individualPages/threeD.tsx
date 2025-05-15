@@ -1,6 +1,7 @@
 import PanelDivider from "@/app/Components/PanelDivider";
 import Image from "next/image";
 import ThreeDEmbedding from "./threeDEmbedding";
+import RouteLink from "@/app/Components/RouteLink";
 
 const modelData = [
   {
@@ -34,8 +35,19 @@ const threeD = () => {
         <span className="text-[var(--gold)]"> physical</span> representation of
         an environment, object, scene, or event that is much easier for viewers
         to process and use than the actual subject. Moreover, three-dimensional
-        data is the primary prerequisite of creating high quality simulations,
-        animations, diagrams, and models.
+        data is the primary prerequisite of creating high quality{" "}
+        <RouteLink
+          href={"/services/simulations"}
+          label={"simulations"}
+          endspc={false}
+        />
+        ,
+        <RouteLink
+          href={"/services/animations"}
+          label={"animations"}
+          endspc={false}
+        />
+        , diagrams, and models.
       </p>
 
       <PanelDivider />

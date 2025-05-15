@@ -41,7 +41,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="tinted h-full w-full flex items-center justify-between px-5 md:px-7">
+      <nav className="z-[1000] tinted h-full w-full flex items-center justify-between px-5 md:px-7">
         <div className="relative h-8/10 aspect-square">
           <Link href="/">
             <Image src={"/logo/darkLogo.png"} alt="IRSA" fill />
