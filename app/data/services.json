@@ -45,6 +45,11 @@
             "serviceID": "simulations",
             "name": "Simulations",
             "imgPath":  "/image/services/simulations/"
+        },
+        {
+            "serviceID": "photometrics",
+            "name": "Photometrics",
+            "imgPath":  "/image/services/photometrics/"
         }
     ]
 }
