@@ -1,3 +1,4 @@
+import PanelDivider from "@/app/Components/PanelDivider";
 import Picture from "@/app/Components/Picture";
 import RouteLink from "@/app/Components/RouteLink";
 import StyledList from "@/app/Components/StyledList";
@@ -5,14 +6,15 @@ import StyledList from "@/app/Components/StyledList";
 const photometrics = () => {
   return (
     <div className="tintedPanel flex flex-col items-center gap-20 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
-      <div className="flex flex-col-reverse lg:flex-row items-center">
+      <h1 className="text-secondary text-4xl text-center">PHOTOMETRICS</h1>
+      <div className="flex flex-col-reverse lg:flex-row">
         <Picture
           src="/image/services/photometrics/img1.jpg"
-          alt="Criminal Proceedings Visual"
+          alt="Metadata Extraction Example"
           override
           className="w-full lg:w-5/10 h-auto"
         />
-        <p className="font-bold text-xl text-center pb-20 lg:pb-0 lg:px-10">
+        <p className="font-bold text-xl pb-20 lg:pb-0 lg:px-10">
           <StyledList items={["Photographs"]} /> hold a plethora of information
           that is neccesary in determining conclusions. At IRSA, we have the
           ability to duplicate the{" "}
@@ -48,15 +50,15 @@ const photometrics = () => {
         </p>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row-reverse items-center">
+      <div className="flex flex-col-reverse lg:flex-row-reverse">
         <Picture
           src="/image/services/photometrics/img2.jpg"
-          alt="Criminal Proceedings Visual"
+          alt="Camera Lens"
           override
           className="w-full lg:w-5/10 h-auto"
         />
         <div className="flex flex-col gap-5 items-center pb-20 lg:pb-0 lg:px-10">
-          <p className="font-bold text-center">
+          <p className="font-bold">
             <StyledList items={["Above"]} />, we see a mere fraction of
             information that can be collected from an image. Though it may be
             hard to read, if you look through the extracted data, you will see
@@ -68,31 +70,29 @@ const photometrics = () => {
             picture. Some examples include of this are , , hand characteristics
             (scraps and cuts), bullet hole patterns, and other objects. form.
           </p>
-          <div className="flex justify-center w-5/10">
-            <ul className="list-disc">
-              {[
-                "Scratches on wood floors",
-                "Shoe markings",
-                "Hand characteristics (e.g. scrapes and cuts)",
-                "Bullet hole patterns",
-              ].map((x) => (
-                <li key={x} className="font-bold text-[var(--gold)]">
-                  {x}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className="list-disc">
+            {[
+              "Scratches on wood floors",
+              "Shoe markings",
+              "Hand characteristics (e.g. scrapes and cuts)",
+              "Bullet hole patterns",
+            ].map((x) => (
+              <li key={x} className="font-bold text-[var(--gold)]">
+                {x}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row items-center">
+      <div className="flex flex-col-reverse lg:flex-row">
         <Picture
           src="/image/services/photometrics/img3.jpg"
-          alt="Criminal Proceedings Visual"
+          alt="Camera Lens"
           override
           className="w-full lg:w-5/10 h-auto"
         />
-        <p className="font-bold text-xl text-center pb-20 lg:pb-0 lg:px-10">
+        <p className="font-bold pb-20 lg:pb-0 lg:px-10">
           We use a variety of{" "}
           <StyledList items={["software", "applications"]} /> to not only gather
           and fully comprehend what is seen in a picture, but to also determine
@@ -110,6 +110,87 @@ const photometrics = () => {
           in the{" "}
           <RouteLink href="/services/accident_recon" label="reconstruction" />{" "}
           stages of a case.
+        </p>
+      </div>
+
+      <PanelDivider />
+
+      <h1 className="text-secondary text-4xl text-center">VIDEOMETRICS</h1>
+      <div className="flex flex-col-reverse lg:flex-row">
+        <Picture
+          src="/image/services/photometrics/video1.jpg"
+          alt="Camera Lens"
+          override
+          className="w-full lg:w-5/10 h-auto"
+        />
+        <p className="font-bold text-xl pb-20 lg:pb-0 lg:px-10">
+          At IRSA, we take part in <StyledList items={["Videography"]} />, more
+          specifically, <StyledList items={["Video Forensics"]} />, a scientific
+          assessment of a subject incident. We analyze the given footage through
+          the latest software while ensuring we follow the best practices. We
+          want to make sure the video is examined with the highest integrity and
+          fullest professional knowledge.
+        </p>
+      </div>
+
+      <div className="flex flex-col-reverse lg:flex-row-reverse">
+        <Picture
+          src="/image/services/photometrics/video2.jpg"
+          alt="Camera Lens"
+          override
+          className="w-full lg:w-5/10 h-auto"
+        />
+        <div className="flex flex-col gap-5 items-center pb-20 lg:pb-0 lg:px-10">
+          <p className="font-bold">
+            We are given large amounts of{" "}
+            <StyledList items={["surveillance"]} /> and{" "}
+            <StyledList items={["dash camera"]} /> footage;{" "}
+            <StyledList items={["enhancing"]} /> it with forensic software in
+            the common case of poor image quality.
+            <br />
+            <br />
+            Video evidence will always be a valuable tool for unveiling the
+            truth, though there are often hidden or muffled details. Our job is
+            to <StyledList items={["enhance"]} />,{" "}
+            <StyledList items={["insert visual aids"]} /> (e.g. tracking boxes),
+            perform{" "}
+            <StyledList items={["frame-by-frame analyses", "uncover"]} />{" "}
+            information invisible to the untrained eye.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex flex-col-reverse lg:flex-row">
+        <Picture
+          src="/image/services/photometrics/img3.jpg"
+          alt="Professional Camera"
+          override
+          className="w-full lg:w-5/10 h-auto"
+        />
+        <p className="font-bold lg:pb-0 lg:px-10">
+          Similar to Photometrics, we can duplicate the{" "}
+          <StyledList items={["lighting", "contrast"]} /> of the site at the
+          time of the accident. Furthermore, we are able to
+          <ul className="list-disc py-5 pl-5">
+            {[
+              "Track objects/motion",
+              "Create Higher Clarity/Resolution",
+              "Produce finer visual detail",
+              "Handle various raw video formats",
+              "Establish spatial relationships",
+              "Perform 3D Analysis",
+              "Read time codes",
+              "Accurately recreate details/colors of the scene",
+            ].map((v) => (
+              <li key={v}>
+                <span className="text-secondary">{v}</span>
+              </li>
+            ))}
+          </ul>
+          Our goal is to inspect, understand, and accurately communicate what
+          was analyzed and discovered through the above processes. We have the
+          ability to take this information and use it as a support for our other
+          scientific findings.
         </p>
       </div>
     </div>

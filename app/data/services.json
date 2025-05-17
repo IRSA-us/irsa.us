@@ -48,7 +48,7 @@
         },
         {
             "serviceID": "photometrics",
-            "name": "Photometrics",
+            "name": "Imaging Science",
             "imgPath":  "/image/services/photometrics/"
         },
         {
