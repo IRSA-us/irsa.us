@@ -27,16 +27,12 @@ export const serviceComponents: Record<string, React.ComponentType<any>> = {
     import("../(noFooter)/services/individualPages/cdr").then((mod) => (
       <mod.default />
     )),
-  simulations: () =>
-    import("../(noFooter)/services/individualPages/simulations").then((mod) => (
-      <mod.default />
-    )),
   criminal: () =>
     import("../(noFooter)/services/individualPages/criminal").then((mod) => (
       <mod.default />
     )),
-  photometrics: () =>
-    import("../(noFooter)/services/individualPages/photometrics").then(
+  imaging_science: () =>
+    import("../(noFooter)/services/individualPages/imaging_science").then(
       (mod) => <mod.default />
     ),
   misc: () =>

@@ -4,52 +4,62 @@
             "serviceID": "threeD",
             "subtitle": "Trucks, Cars, Buildings, Premises, Crime Scenes, etc.",
             "name": "3D Modeling",
-            "imgPath": "/image/services/threeD/"
+            "imgPath": "/image/services/threeD/",
+            "href": "/services/threeD"
         },
         {
             "serviceID": "accident_recon",
             "name": "Accident Reconstruction",
-            "imgPath": "/image/services/accident_recon/"
+            "imgPath": "/image/services/accident_recon/",
+            "href": "/services/accident_recon"
         },
         {
             "serviceID": "criminal",
             "name": "Criminal Proceedings",
-            "imgPath": "/image/services/criminal/"
+            "imgPath": "/image/services/criminal/",
+            "href": "/services/criminal"
         },
         {
             "serviceID": "biomechanics",
             "name": "Biomechanics",
-            "imgPath": "/image/services/biomechanics/"
+            "imgPath": "/image/services/biomechanics/",
+            "href": "/services/biomechanics"
         },
         {
             "serviceID": "animations_simulations",
             "name": "Animations & Simulations",
-            "imgPath": "/image/services/animations_simulations/"
+            "imgPath": "/image/services/animations_simulations/",
+            "href": "/services/animations_simulations"
         },
         {
             "serviceID": "human_factors",
             "name": "Human Factors",
-            "imgPath": "/image/services/human_factors/"
+            "imgPath": "/image/services/human_factors/",
+            "href": "/services/human_factors"
         },
         {
             "serviceID": "premises",
             "name": "Premises Liability",
-            "imgPath":  "/image/services/premises/"
+            "imgPath":  "/image/services/premises/",
+            "href": "/services/premises"
         },
         {
             "serviceID": "cdr",
             "name": "Crash Data Retrieval (EDR/CDR)",
-            "imgPath":  "/image/services/cdr/"
+            "imgPath":  "/image/services/cdr/",
+            "href": "/services/cdr"
         },
         {
-            "serviceID": "photometrics",
+            "serviceID": "imaging_science",
             "name": "Imaging Science",
-            "imgPath":  "/image/services/photometrics/"
+            "imgPath":  "/image/services/imaging_science/",
+            "href": "/services/imaging_science"
         },
         {
             "serviceID": "misc",
             "name": "Miscellanious Services",
-            "imgPath":  "/image/services/misc/"
+            "imgPath":  "/image/services/misc/",
+            "href": "/services/misc"
         }
     ]
 }

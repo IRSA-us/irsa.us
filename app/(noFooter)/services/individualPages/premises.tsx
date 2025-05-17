@@ -10,7 +10,7 @@ const premises = () => {
       <div className="flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-start">
         <Picture
           src="/image/services/premises/cover.jpg"
-          alt="Criminal Proceedings Visual"
+          alt=""
           override
           className="w-full lg:w-5/10 h-auto"
         />

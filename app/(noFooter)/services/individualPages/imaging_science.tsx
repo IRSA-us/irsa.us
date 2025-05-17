@@ -3,7 +3,7 @@ import Picture from "@/app/Components/Picture";
 import RouteLink from "@/app/Components/RouteLink";
 import StyledList from "@/app/Components/StyledList";
 
-const photometrics = () => {
+const imaging_science = () => {
   return (
     <div className="tintedPanel flex flex-col items-center gap-20 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
       <h1 className="text-secondary text-4xl text-center">PHOTOMETRICS</h1>
@@ -160,18 +160,20 @@ const photometrics = () => {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row">
+      <div className="flex flex-col-reverse lg:flex-row gap-20 lg:gap-0">
         <Picture
           src="/image/services/photometrics/img3.jpg"
           alt="Professional Camera"
           override
           className="w-full lg:w-5/10 h-auto"
         />
-        <p className="font-bold lg:pb-0 lg:px-10">
-          Similar to Photometrics, we can duplicate the{" "}
-          <StyledList items={["lighting", "contrast"]} /> of the site at the
-          time of the accident. Furthermore, we are able to
-          <ul className="list-disc py-5 pl-5">
+        <div className="flex flex-col">
+          <p className="font-bold lg:pb-0 lg:px-10">
+            Similar to Photometrics, we can duplicate the{" "}
+            <StyledList items={["lighting", "contrast"]} /> of the site at the
+            time of the accident. Furthermore, we are able to
+          </p>
+          <ul className="list-disc py-5 pl-15">
             {[
               "Track objects/motion",
               "Create Higher Clarity/Resolution",
@@ -187,14 +189,16 @@ const photometrics = () => {
               </li>
             ))}
           </ul>
-          Our goal is to inspect, understand, and accurately communicate what
-          was analyzed and discovered through the above processes. We have the
-          ability to take this information and use it as a support for our other
-          scientific findings.
-        </p>
+          <p className="font-bold lg:pb-0 lg:px-10">
+            Our goal is to inspect, understand, and accurately communicate what
+            was analyzed and discovered through the above processes. We have the
+            ability to take this information and use it as a support for our
+            other scientific findings.
+          </p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default photometrics;
+export default imaging_science;

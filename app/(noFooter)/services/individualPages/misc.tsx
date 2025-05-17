@@ -247,7 +247,7 @@ const misc = () => {
                 },
                 { name: "", desc: "Other Types of Employment" },
               ].map((v) => (
-                <li>
+                <li key={v.name}>
                   <span className="font-bold text-secondary">{v.name}</span>{" "}
                   <span className="font-normal">{v.desc}</span>
                 </li>
