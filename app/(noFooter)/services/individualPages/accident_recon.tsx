@@ -1,7 +1,7 @@
 import PanelDivider from "@/app/Components/PanelDivider";
 import RouteLink from "@/app/Components/RouteLink";
 import StyledList from "@/app/Components/StyledList";
-import YouTubeEmbedx2 from "@/app/Components/YouTubeEmbedx2";
+import YouTubeEmbedMulti from "@/app/Components/YouTubeEmbedMulti";
 import Image from "next/image";
 
 const accidentTypes = [
@@ -17,7 +17,7 @@ const accidentTypes = [
 const accident_recon = () => {
   return (
     <>
-      <div className="tintedPanel flex flex-col items-center gap-10 py-10 px-5 lg:px-15 2xl:px-75 mb-50">
+      <div className="tintedPanel flex flex-col items-center gap-10 py-10 px-[5%] 2xl:px-[15%] mb-50">
         <h1 className="font-bold text-2xl md:text-3xl text-center">
           The process of investigating, analyzing, and drawing conclusions about
           the <span className="text-[var(--gold)]">events</span>,{" "}
@@ -97,14 +97,16 @@ const accident_recon = () => {
           specialists, we have produced and created over 200 automotive
           simulations.
         </p>
-        <YouTubeEmbedx2
-          id={[
-            "gLcC29QpkJQ?si=xrBBtROlk91PdMA7",
-            "XsTNzFqDEUc?si=cLaLCzJCN_Hh-6R-",
-          ]}
-          desc={[
-            "A van fails to stop at a stop sign and collides with oncoming traffic. The van takes a tight turn onto the highway indicating he had no intention of stopping.",
-            "In heavy traffic, the number one and two lanes stopped to allow a vehicle to make a left-turn. The vehicle did not check the number three lane resulting in a collision.",
+        <YouTubeEmbedMulti
+          embedData={[
+            {
+              id: "gLcC29QpkJQ?si=xrBBtROlk91PdMA7",
+              desc: "A van fails to stop at a stop sign and collides with oncoming traffic. The van takes a tight turn onto the highway indicating he had no intention of stopping.",
+            },
+            {
+              id: "HpjIw6kwwvY?si=FiRMc9QCqTE-Oyq9",
+              desc: "In heavy traffic, the number one and two lanes stopped to allow a vehicle to make a left-turn. The vehicle did not check the number three lane resulting in a collision.",
+            },
           ]}
         />
 
@@ -128,14 +130,16 @@ const accident_recon = () => {
           with performing calculations, measurements, and collecting data
           supporting our peer reviewed/scientific theories.
         </p>
-        <YouTubeEmbedx2
-          id={[
-            "GXKWMU7EOyY?si=A_Prp58PTLfPnW46",
-            "XAGdqKNyDw0?si=-QpgATMpy3aBer2p",
-          ]}
-          desc={[
-            "A bicyclist was riding on a street when the battery on his electric bicycle came loose and fell to the ground. The bicyclist applied the front brakes and was ejected. He landed on a part of his head that would have been protected if he had been wearing a helmet.",
-            "The SUV driver claims to have stopped at the stop sign while the bicyclist claims that the SUV driver did not stop at the stop sign.",
+        <YouTubeEmbedMulti
+          embedData={[
+            {
+              id: "GXKWMU7EOyY?si=A_Prp58PTLfPnW46",
+              desc: "A bicyclist was riding on a street when the battery on his electric bicycle came loose and fell to the ground. The bicyclist applied the front brakes and was ejected. He landed on a part of his head that would have been protected if he had been wearing a helmet.",
+            },
+            {
+              id: "XAGdqKNyDw0?si=-QpgATMpy3aBer2p",
+              desc: "The SUV driver claims to have stopped at the stop sign while the bicyclist claims that the SUV driver did not stop at the stop sign.",
+            },
           ]}
         />
 
@@ -183,14 +187,16 @@ const accident_recon = () => {
           />
           .
         </p>
-        <YouTubeEmbedx2
-          id={[
-            "JHuNV3_VyLw?si=7XxNswjQHE25VmEq",
-            "JmRW-6nCa3Q?si=psytF2ATfGqB8dSF",
-          ]}
-          desc={[
-            "A motorcyclist, traveling on a roadway with many grade changes and curves, fails to pay attention to the intersection sign ahead. Had he been traveling at the cautionary speed of 35 mph; the accident could have been avoided.",
-            "Two kids riding on a dirt bike attempt to cross a T-intersection and failed to see the oncoming vehicle. Both motorists claim that they could not see each other through the bushes. If the dirt bike rider had stopped in the median before crossing traffic, he could have avoided the accident.",
+        <YouTubeEmbedMulti
+          embedData={[
+            {
+              id: "JHuNV3_VyLw?si=7XxNswjQHE25VmEq",
+              desc: "A motorcyclist, traveling on a roadway with many grade changes and curves, fails to pay attention to the intersection sign ahead. Had he been traveling at the cautionary speed of 35 mph; the accident could have been avoided.",
+            },
+            {
+              id: "JmRW-6nCa3Q?si=psytF2ATfGqB8dSF",
+              desc: "Two kids riding on a dirt bike attempt to cross a T-intersection and failed to see the oncoming vehicle. Both motorists claim that they could not see each other through the bushes. If the dirt bike rider had stopped in the median before crossing traffic, he could have avoided the accident.",
+            },
           ]}
         />
 
@@ -219,14 +225,16 @@ const accident_recon = () => {
           criteria, and other biomechanical/reconstructive aspects of a
           pedestrian impact.
         </p>
-        <YouTubeEmbedx2
-          id={[
-            "bqKWqIbzGN4?si=tq17Pbp42vjpiDUL",
-            "DDlttiV9YTI?si=brvUTl_8xH9-7ifA",
-          ]}
-          desc={[
-            "A pedestrian walks from the bank to the Marshalls across the street. Unfortunately for the pedestrian, a Ford Edge, who had just completed a U-turn was looking in his side view mirrors in attempt to change lanes toward the left turn lane. This video demonstrates that had the pedestrian been looking towards her right, she would have had a clear view of the approaching traffic and would have seen a vehicle close enough to constitute a hazard.",
-            "A pedestrian runs into the roadway directly in front of a vehicle. The vehicle reacts by swerving and braking, but is still unable to avoid striking the pedestrian.",
+        <YouTubeEmbedMulti
+          embedData={[
+            {
+              id: "bqKWqIbzGN4?si=tq17Pbp42vjpiDUL",
+              desc: "A pedestrian walks from the bank to the Marshalls across the street. Unfortunately for the pedestrian, a Ford Edge, who had just completed a U-turn was looking in his side view mirrors in attempt to change lanes toward the left turn lane. This video demonstrates that had the pedestrian been looking towards her right, she would have had a clear view of the approaching traffic and would have seen a vehicle close enough to constitute a hazard.",
+            },
+            {
+              id: "DDlttiV9YTI?si=brvUTl_8xH9-7ifA",
+              desc: "A pedestrian runs into the roadway directly in front of a vehicle. The vehicle reacts by swerving and braking, but is still unable to avoid striking the pedestrian.",
+            },
           ]}
         />
 
@@ -260,14 +268,16 @@ const accident_recon = () => {
           <RouteLink href={"/services/cdr"} label={"CDR"} endspc={false} />
           ’s.
         </p>
-        <YouTubeEmbedx2
-          id={[
-            "NFWKz9_5SeY?si=aoAu8rB6aRQtlwM9",
-            "21fgLk_dqMk?si=BQ_IN9hSnjG8fkLI",
-          ]}
-          desc={[
-            "A motorist under the influence enters into the opposite lane of travel in order to pass a tractor trailer. As a result, an oncoming vehicle swerves onto the dirt shoulder to avoid a collision and over-corrects to get back on the highway and loses control of their vehicle.",
-            "A tractor trailer makes an unsafe lane change into a Lexus. The viewpoints of the various parties are depicted.",
+        <YouTubeEmbedMulti
+          embedData={[
+            {
+              id: "NFWKz9_5SeY?si=aoAu8rB6aRQtlwM9",
+              desc: "A motorist under the influence enters into the opposite lane of travel in order to pass a tractor trailer. As a result, an oncoming vehicle swerves onto the dirt shoulder to avoid a collision and over-corrects to get back on the highway and loses control of their vehicle.",
+            },
+            {
+              id: "21fgLk_dqMk?si=BQ_IN9hSnjG8fkLI",
+              desc: "A tractor trailer makes an unsafe lane change into a Lexus. The viewpoints of the various parties are depicted.",
+            },
           ]}
         />
       </div>
@@ -294,21 +304,24 @@ const accident_recon = () => {
             ]}
           />
         </p>
-        <YouTubeEmbedx2
-          id={[
-            "61dTFVUiEzw?si=wshxqFlXpM86XHdI",
-            "0Nce99V-2zE?si=2s5fWQILH--OSZ0D",
-          ]}
-          desc={[
-            "An employee of a grocery store is using a hand-operated forklift and fails to pay attention to the vehicles in the parking lot.",
-            "A roof company employee was moving a welder along the top of an unfinished roof structure. While moving along a truss line, the OSB deflected causing the tire of the welder cart to get stuck in a trough created by the OSB deflection. After recruiting some help, the weight of the welder cart and additional employees ultimately caused the joist hangers to fail and a section of the roof collapsed. This video shows the effect of the removal of a truss line that was in the original plans.",
+        <YouTubeEmbedMulti
+          embedData={[
+            {
+              id: "61dTFVUiEzw?si=wshxqFlXpM86XHdI",
+              desc: "An employee of a grocery store is using a hand-operated forklift and fails to pay attention to the vehicles in the parking lot.",
+            },
+            {
+              id: "0Nce99V-2zE?si=2s5fWQILH--OSZ0D",
+              desc: "A roof company employee was moving a welder along the top of an unfinished roof structure. While moving along a truss line, the OSB deflected causing the tire of the welder cart to get stuck in a trough created by the OSB deflection. After recruiting some help, the weight of the welder cart and additional employees ultimately caused the joist hangers to fail and a section of the roof collapsed. This video shows the effect of the removal of a truss line that was in the original plans.",
+            },
           ]}
         />
       </div>
 
       <div className="tintedPanel flex flex-col items-center gap-5 py-10 px-5 lg:px-15 2xl:px-75">
         <p className="text-center md:text-lg">
-          IRSA also handles <StyledList items={["criminal events"]} /> as it
+          IRSA also handles{" "}
+          <RouteLink href="/services/criminal" label="criminal events" /> as it
           pertains to various theories of Accident Reconstruction, such as the
           angle of injury, impact forces, delta-V’s, bullet trajectories, and
           time/distance analyses.

@@ -24,7 +24,7 @@ const modelData = [
 
 const threeD = () => {
   return (
-    <div className="tintedPanel flex flex-col items-center gap-10 py-20 px-10 md:px-30 2xl:px-80">
+    <div className="tintedPanel flex flex-col items-center gap-10 py-20 px-[5%] 2xl:px-[15%]">
       <h1 className="text-4xl text-center text-[var(--gold)]">3D Scanning</h1>
 
       <PanelDivider />

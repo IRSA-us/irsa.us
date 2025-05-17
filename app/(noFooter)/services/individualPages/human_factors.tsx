@@ -4,7 +4,7 @@ import StyledList from "@/app/Components/StyledList";
 
 const human_factors = () => {
   return (
-    <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-5 2xl:px-70">
+    <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
       <div className="flex flex-col-reverse items-center md:flex-row gap-10">
         <div className="flex flex-col gap-20 md:w-5/10">
           <Picture

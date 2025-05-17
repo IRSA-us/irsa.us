@@ -2,11 +2,11 @@ import PanelDivider from "@/app/Components/PanelDivider";
 import Picture from "@/app/Components/Picture";
 import RouteLink from "@/app/Components/RouteLink";
 import StyledList from "@/app/Components/StyledList";
-import YouTubeEmbedx2 from "@/app/Components/YouTubeEmbedx2";
+import YouTubeEmbedMulti from "@/app/Components/YouTubeEmbedMulti";
 
 const criminal = () => {
   return (
-    <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-5 2xl:px-70">
+    <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
       <div className="flex flex-col-reverse items-center md:flex-row gap-10">
         <div className="flex flex-col gap-10 md:w-5/10">
           <Picture
@@ -72,14 +72,16 @@ const criminal = () => {
       <h1 className="font-bold text-2xl md:text-3xl text-center text-[var(--gold)] mb-10">
         CRIMINAL PROCEEDINGS SIMULATIONS
       </h1>
-      <YouTubeEmbedx2
-        id={[
-          "bCV_TdbbrbQ?si=vo6crczpIjbqEo9o",
-          "ZlRNi74SQZs?si=FSNSf3zrXWTD-knB",
-        ]}
-        desc={[
-          "The male defendant was accused of first degree murder of his wife. IRSA demonstrated it was not murder, but self-defense. Additionally, we identified 2 dozen more issues (after law enforcement checked the scene) and used it in trial; resulting in the aforementioned individual being acquitted.",
-          "The following non-fictional simulation is a promotional 9-minute video that depicts a behind the scenes look at IRSA's reconstruction process for a murder case. Interviews were performed by IRSA staff members and the actual attorneys involved in the case. Some scenes may be graphic.",
+      <YouTubeEmbedMulti
+        embedData={[
+          {
+            id: "bCV_TdbbrbQ?si=vo6crczpIjbqEo9o",
+            desc: "The male defendant was accused of first degree murder of his wife. IRSA demonstrated it was not murder, but self-defense. Additionally, we identified 2 dozen more issues (after law enforcement checked the scene) and used it in trial; resulting in the aforementioned individual being acquitted.",
+          },
+          {
+            id: "ZlRNi74SQZs?si=FSNSf3zrXWTD-knB",
+            desc: "The following non-fictional simulation is a promotional 9-minute video that depicts a behind the scenes look at IRSA's reconstruction process for a murder case. Interviews were performed by IRSA staff members and the actual attorneys involved in the case. Some scenes may be graphic.",
+          },
         ]}
       />
     </div>

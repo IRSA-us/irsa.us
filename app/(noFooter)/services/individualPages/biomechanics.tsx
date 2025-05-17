@@ -5,7 +5,7 @@ import StyledList from "@/app/Components/StyledList";
 
 const biomechanics = () => {
   return (
-    <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-5 md:px-25 lg:px-50 2xl:px-75">
+    <div className="tintedPanel flex flex-col items-center gap-10 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
       <h1 className="font-bold text-2xl md:text-3xl text-center">
         The science of applying <StyledList items={["mechanical laws"]} /> to
         analyze human movements.
