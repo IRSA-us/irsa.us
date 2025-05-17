@@ -22,9 +22,9 @@
             "imgPath": "/image/services/biomechanics/"
         },
         {
-            "serviceID": "animations",
-            "name": "Animations",
-            "imgPath": "/image/services/animations/"
+            "serviceID": "animations_simulations",
+            "name": "Animations & Simulations",
+            "imgPath": "/image/services/animations_simulations/"
         },
         {
             "serviceID": "human_factors",
@@ -40,11 +40,6 @@
             "serviceID": "cdr",
             "name": "Crash Data Retrieval (EDR/CDR)",
             "imgPath":  "/image/services/cdr/"
-        },
-        {
-            "serviceID": "simulations",
-            "name": "Simulations",
-            "imgPath":  "/image/services/simulations/"
         },
         {
             "serviceID": "photometrics",

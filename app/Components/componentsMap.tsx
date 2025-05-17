@@ -7,10 +7,10 @@ export const serviceComponents: Record<string, React.ComponentType<any>> = {
     import("../(noFooter)/services/individualPages/accident_recon").then(
       (mod) => <mod.default />
     ),
-  animations: () =>
-    import("../(noFooter)/services/individualPages/animations").then((mod) => (
-      <mod.default />
-    )),
+  animations_simulations: () =>
+    import(
+      "../(noFooter)/services/individualPages/animations_simulations"
+    ).then((mod) => <mod.default />),
   biomechanics: () =>
     import("../(noFooter)/services/individualPages/biomechanics").then(
       (mod) => <mod.default />
