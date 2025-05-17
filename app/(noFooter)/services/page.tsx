@@ -39,7 +39,7 @@ const ServicesPage = async () => {
                 alt={service.name}
               />
               <Tint />
-              <h1 className="absolute w-1/2 md:w-8/10 text-5xl mx-10 my-20 group-hover:text-[45px] transition-all duration-300">
+              <h1 className="absolute w-1/2 md:w-13/20 text-5xl mx-10 my-20 group-hover:text-[45px] transition-all duration-300">
                 {service.name}
               </h1>
               <div className="absolute h-full bg-[var(--gold)] w-0 opacity-0 group-hover:w-full group-hover:opacity-80 transition-all duration-700 ease-in-out" />

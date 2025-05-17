@@ -39,4 +39,8 @@ export const serviceComponents: Record<string, React.ComponentType<any>> = {
     import("../(noFooter)/services/individualPages/photometrics").then(
       (mod) => <mod.default />
     ),
+  misc: () =>
+    import("../(noFooter)/services/individualPages/misc").then((mod) => (
+      <mod.default />
+    )),
 };

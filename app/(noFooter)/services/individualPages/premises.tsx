@@ -15,7 +15,7 @@ const premises = () => {
           className="w-full lg:w-5/10 h-auto"
         />
         <div className="flex flex-col gap-7 items-center">
-          <p className="font-bold text-center lg:px-10">
+          <p className="text-xl font-bold text-center lg:px-5">
             IRSA Engineers use their expertise in{" "}
             <RouteLink
               href="/services/human_factors"

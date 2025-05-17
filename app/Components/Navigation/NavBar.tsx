@@ -11,7 +11,6 @@ import { usePathname } from "next/navigation";
 const NavBar = () => {
   const [panelOut, setPanelOut] = useState(false);
   const pathname = usePathname();
-  const layer1path = pathname.split("/")[1];
   const panelRef = useRef<HTMLDivElement>(null);
 
   // Close on reroute
@@ -63,7 +62,7 @@ const NavBar = () => {
           </div>
         </button>
       </nav>
-      <NavPanel show={panelOut} ref={panelRef} />
+      <NavPanel show={panelOut} ref={panelRef} setPanelOut={setPanelOut} />
     </>
   );
 };
