@@ -1,6 +1,12 @@
 {
     "services": [
         {
+            "serviceID": "animations_simulations",
+            "name": "Animations & Simulations",
+            "imgPath": "/image/services/animations_simulations/",
+            "href": "/services/animations_simulations"
+        },
+        {
             "serviceID": "threeD",
             "subtitle": "Trucks, Cars, Buildings, Premises, Crime Scenes, etc.",
             "name": "3D Modeling",
@@ -26,10 +32,10 @@
             "href": "/services/biomechanics"
         },
         {
-            "serviceID": "animations_simulations",
-            "name": "Animations & Simulations",
-            "imgPath": "/image/services/animations_simulations/",
-            "href": "/services/animations_simulations"
+            "serviceID": "drone",
+            "name": "Drone",
+            "imgPath": "/image/services/drone/",
+            "href": "/services/drone"
         },
         {
             "serviceID": "human_factors",

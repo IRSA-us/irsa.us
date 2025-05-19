@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 import Tint from "@/app/Components/Tint";
 import Image from "next/image";
-import { serviceComponents } from "@/app/Components/componentsMap";
+import { serviceComponents } from "@/app/Components/serviceComponentMap";
 import Footer from "@/app/Components/Footer";
 
 interface Props {

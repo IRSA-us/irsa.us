@@ -13,11 +13,13 @@ const cdr = () => {
             override
             className="w-full lg:w-5/10 h-auto"
           />
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
-            The Institute of Risk & Safety Analyses uses the{" "}
-            <StyledList items={["Bosch Crash Data Retrieval"]} /> Software and
-            Hardware to download crash data from supported vehicles:
-            <ul className="list-disc pl-5 py-7">
+          <div className="flex flex-col items-center">
+            <p className="w-full h-auto text-xl font-bold">
+              The Institute of Risk & Safety Analyses uses the{" "}
+              <StyledList items={["Bosch Crash Data Retrieval"]} /> Software and
+              Hardware to download crash data from supported vehicles:
+            </p>
+            <ul className="list-disc pl-5 py-7 text-xl font-bold">
               <li>
                 <RouteLink
                   href={"/documents/CDR_v21.3_Vehicle_Coverage_List_R1_0_0.pdf"}
@@ -27,10 +29,12 @@ const cdr = () => {
               <li>Tesla</li>
               <li>Hyundai/Kia</li>
             </ul>
-            Data is read from AirbagControl Modules (ACM), Roll-over Sensors
-            (ROS), and Powertrain Control Modules (PCM) installed in supported
-            vehicles.
-          </p>
+            <p className="w-full h-auto text-xl font-bold">
+              Data is read from AirbagControl Modules (ACM), Roll-over Sensors
+              (ROS), and Powertrain Control Modules (PCM) installed in supported
+              vehicles.
+            </p>
+          </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-10">
           <p className="w-full lg:w-5/10 h-auto text-lg">

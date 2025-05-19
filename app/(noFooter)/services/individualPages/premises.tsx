@@ -38,7 +38,7 @@ const premises = () => {
               {[
                 "Trip/Slip & Fall",
                 "Building Code Violations",
-                "Balcony and/pr Railing Failure",
+                "Balcony and/or Railing Failure",
                 "Uneven Sidewalk/Curb/Walkway",
                 "Lighting Conditions",
                 "Furniture Defects",
@@ -66,7 +66,7 @@ const premises = () => {
             <br />
             <br />
             We perform assessments with various professional{" "}
-            <StyledList items={["tools"]} /> such as:
+            <StyledList items={["tools"]} /> such as
           </p>
 
           <div className="w-7/10 flex justify-center">
