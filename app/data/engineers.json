@@ -1,0 +1,85 @@
+{
+    "engineers": [
+        {
+            "id": "kenneth-a-solomon",
+            "name": "Kenneth Alvin Solomon",
+            "titles": "Chief Forensic Scientist",
+            "hidden": false
+        },
+        {
+            "id": "bob-malek",
+            "name": "Bob Malek",
+            "titles": "Senior Forensic Scientist"
+        },
+        {
+            "id": "librado-mancilla",
+            "name": "Librado Mancilla",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "ricardo-mejia",
+            "name": "Ricardo Mejia",
+            "titles": "Senior Forensic Scientist"
+        },
+        {
+            "id": "alex-capello",
+            "name": "Alex Capello",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "savannah-larmon",
+            "name": "Savannah Larmon",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "ricardo-esquivel",
+            "name": "Ricardo Esquivel",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "jaime-garcia",
+            "name": "Jaime Garcia",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "ban-choi",
+            "name": "Ban Choi",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "daniel-vatcher",
+            "name": "Daniel Vatcher",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "chad-krieger",
+            "name": "Chad Krieger",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "wei-chao",
+            "name": "Wei Chao",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "christian-dermanuelian",
+            "name": "Christian DerManuelian",
+            "titles": "Associate Forensic Scientist"
+        },
+        {
+            "id": "elisa-capello",
+            "name": "Elisa Capello",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "jorge-garcia",
+            "name": "Jorge Garcia",
+            "titles": "Forensic Scientist"
+        },
+        {
+            "id": "malcolm",
+            "name": "Malcolm",
+            "titles": "Test Dummy"
+        }
+    ]
+}
