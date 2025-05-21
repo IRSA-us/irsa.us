@@ -66,6 +66,10 @@ const NavPanel = forwardRef<
                 <Link
                   href={page.href}
                   onClick={() => handleLinkClick(page.href)}
+                  className={`${
+                    page.href === "/" + currentPath.split("/")[1] &&
+                    "text-slate-700"
+                  }`}
                 >
                   {page.label}
                 </Link>

@@ -1,7 +1,7 @@
 import engineerData from "../../data/engineers.json";
 import Tint from "@/app/Components/Tint";
 import Image from "next/image";
-import ExpertCard from "./expertCard";
+import ExpertCards from "./ExpertCards";
 
 const page = async () => {
   const experts = engineerData.engineers;
@@ -29,14 +29,7 @@ const page = async () => {
         <h1 className="text-7xl z-10">Experts</h1>
       </div>
 
-      <div className="w-full p-10 xl:px-50">
-        <div className="flex flex-col justify-center md:flex-row md:flex-wrap gap-10 md:gap-x-[6%] lg:gap-x-[5%] md:gap-y-10">
-          {experts.map(
-            (expert) =>
-              !expert.hidden && <ExpertCard key={expert.id} expert={expert} />
-          )}
-        </div>
-      </div>
+      <ExpertCards experts={experts} />
     </>
   );
 };

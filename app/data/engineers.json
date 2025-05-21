@@ -2,84 +2,133 @@
     "engineers": [
         {
             "id": "kenneth-a-solomon",
+            "contentID": "KAS",
             "name": "Kenneth Alvin Solomon",
-            "titles": "Chief Forensic Scientist",
+            "titles": ["Chief Forensic Scientist", "CEO"],
+            "degrees": ["B.L.S", "B.S.", "M.S.", "P.H.D", "P.E.", "Post P.H.D."],
+            "email": "kenneth@irsa.us",
+            "CV": "CV - Dr. Kenneth Solomon - June 2024.pdf",
             "hidden": false
         },
         {
             "id": "bob-malek",
+            "contentID": "BobMalek",
             "name": "Bob Malek",
-            "titles": "Senior Forensic Scientist"
-        },
-        {
-            "id": "librado-mancilla",
-            "name": "Librado Mancilla",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "ricardo-mejia",
-            "name": "Ricardo Mejia",
-            "titles": "Senior Forensic Scientist"
-        },
-        {
-            "id": "alex-capello",
-            "name": "Alex Capello",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "savannah-larmon",
-            "name": "Savannah Larmon",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "ricardo-esquivel",
-            "name": "Ricardo Esquivel",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "jaime-garcia",
-            "name": "Jaime Garcia",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "ban-choi",
-            "name": "Ban Choi",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "daniel-vatcher",
-            "name": "Daniel Vatcher",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "chad-krieger",
-            "name": "Chad Krieger",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "wei-chao",
-            "name": "Wei Chao",
-            "titles": "Forensic Scientist"
-        },
-        {
-            "id": "christian-dermanuelian",
-            "name": "Christian DerManuelian",
-            "titles": "Associate Forensic Scientist"
+            "titles": ["Senior Forensic Scientist", "Deputy"],
+            "degrees": ["B.S.", "M.S.", "J.D."],
+            "email": "bmalek@irsa.us"
         },
         {
             "id": "elisa-capello",
-            "name": "Elisa Capello",
-            "titles": "Forensic Scientist"
+            "contentID": "ElisaCapello",
+            "name": "Elisa Solomon Capello",
+            "titles": ["Senior Vocational Analyst"],
+            "degrees": ["A.A.", "B.A.", "M.S."],
+            "email": "esolomon@irsa.us"
+        },
+        {
+            "id": "ricardo-mejia",
+            "contentID": "RicardoMejia",
+            "name": "Ricardo Mejia",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "ricardo@irsa.us"
+        },
+        {
+            "id": "wei-chao",
+            "contentID": "WeiChao",
+            "name": "Wei Chao",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S.", "M.S."],
+            "email": "wchao@irsa.us"
+        },
+        {
+            "id": "ban-choi",
+            "contentID": "BanChoi",
+            "name": "Ban Choi",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "bchoi@irsa.us"
         },
         {
             "id": "jorge-garcia",
+            "contentID": "JorgeGarcia",
             "name": "Jorge Garcia",
-            "titles": "Forensic Scientist"
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "jgarcia@irsa.us"
+        },
+        {
+            "id": "jaime-garcia",
+            "contentID": "JaimeGarcia",
+            "name": "Jaime Garcia",
+            "titles": ["Senior Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "jaime.garcia@irsa.us"
+        },
+        {
+            "id": "librado-mancilla",
+            "contentID": "LibradoMancilla",
+            "name": "Librado Mancilla",
+            "titles": ["Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "lmancilla@irsa.us"
+        },
+        {
+            "id": "daniel-vatcher",
+            "contentID": "DanielVatcher",
+            "name": "Daniel Vatcher",
+            "titles": ["Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "dvatcher@irsa.us"
+        },
+        {
+            "id": "chad-krieger",
+            "contentID": "ChadKrieger",
+            "name": "Chad Krieger",
+            "titles": ["Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "ckrieger@irsa.us"
+        },
+        {
+            "id": "alex-capello",
+            "contentID": "AlexCapello",
+            "name": "Alex Capello",
+            "titles": ["Staff Video Analyst"],
+            "degrees": ["B.S.", "M.A."],
+            "email": "acapello@irsa.us"
+        },
+        {
+            "id": "ricardo-esquivel",
+            "contentID": "RicardoEsquivel",
+            "name": "Ricardo Esquivel",
+            "titles": ["Associate Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "r.esquivel@irsa.us"
+        },
+        {
+            "id": "savannah-larmon",
+            "contentID": "SavannahLarmon",
+            "name": "Savannah Larmon",
+            "titles": ["Associate Forensic Scientist"],
+            "degrees": ["B.S."],
+            "email": "s.larmon@irsa.us"
+        },
+        {
+            "id": "christian-dermanuelian",
+            "contentID": "ChristianDerManuelian",
+            "name": "Christian DerManuelian",
+            "titles": ["Staff Computer Scientist"],
+            "degrees": ["B.S."],
+            "email": "cdermanuelian@irsa.us"
         },
         {
             "id": "malcolm",
+            "contentID": "Malcolm",
             "name": "Malcolm",
-            "titles": "Test Dummy"
+            "titles": ["Test Dummy"],
+            "degrees": ["N/A"],
+            "email": "N/A"
         }
     ]
 }

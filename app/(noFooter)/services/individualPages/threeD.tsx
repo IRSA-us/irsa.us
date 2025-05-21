@@ -98,7 +98,7 @@ const threeD = () => {
         <Picture
           src="/image/threeDControlLegend.png"
           alt="LMB, RMB, Scroll"
-          className="shadow-none w-[20%] h-auto absolute m-5 z-10"
+          className="shadow-none w-[20%] h-auto absolute m-5 z-1"
           override
         />
         <ThreeDEmbedding />

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -18,6 +19,8 @@ const SubLinks = ({
 
   if (links === undefined) return <div />;
 
+  const linkStyles = "hover:text-slate-700 transition-colors duration-200";
+
   return (
     <div className="w-full h-full flex flex-col justify-between py-5 pl-10 border-2 border-white">
       {links.map((link) => (
@@ -25,7 +28,10 @@ const SubLinks = ({
           <h2 key={link.label} className="font-bold text-2xl">
             <Link
               href={link.href}
-              className="hover:text-slate-700 transition-colors duration-200"
+              className={`${linkStyles} ${
+                link.href === currentPath &&
+                "pointer-events-none text-slate-700"
+              }`}
               onClick={() => handleLinkClick(link.href)}
             >
               {link.label}

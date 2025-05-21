@@ -2,22 +2,27 @@ const StyledList = ({
   items,
   separator = ", ",
   conjunction = "and",
+  conjunction2 = "and",
+  inverted = false,
 }: {
   items: string[];
   separator?: string;
+  conjunction2?: string;
   conjunction?: string;
+  inverted?: boolean;
 }) => {
   const n = items.length;
-  const gold = "text-[var(--gold)]";
+  const color = inverted ? "" : "text-secondary";
+  const altColor = inverted ? "text-secondary" : "";
 
   if (n === 0) return null;
-  if (n === 1) return <span className={gold}>{items[0]}</span>;
+  if (n === 1) return <span className={color}>{items[0]}</span>;
   if (n === 2)
     return (
       <>
-        <span className={gold}>{items[0]}</span>
-        {` ${conjunction} `}
-        <span className={gold}>{items[1]}</span>
+        <span className={color}>{items[0]}</span>
+        <span className={altColor}>{`${conjunction2}`}</span>
+        <span className={color}>{items[1]}</span>
       </>
     );
 
@@ -25,12 +30,14 @@ const StyledList = ({
     <>
       {items.map((item, i) => (
         <span key={`styledListItem_${item}`}>
-          <span className={gold}> {item}</span>
-          {i < n - 2
-            ? `${separator} `
-            : i === n - 2
-            ? `${separator} ${conjunction} `
-            : ""}
+          <span className={color}> {item}</span>
+          {i < n - 2 ? (
+            <span className={altColor}>{`${separator} `}</span>
+          ) : i === n - 2 ? (
+            <span className={altColor}>{`${separator} ${conjunction} `}</span>
+          ) : (
+            ""
+          )}
         </span>
       ))}
     </>
