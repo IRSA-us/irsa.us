@@ -98,7 +98,8 @@
             "name": "Chad Krieger",
             "titles": ["Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "ckrieger@irsa.us"
+            "email": "ckrieger@irsa.us",
+            "specialties": ["Premises Liability", "EDR"]
         },
         {
             "id": "alex-capello",

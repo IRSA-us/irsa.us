@@ -16,7 +16,7 @@ export default async function DefaultLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="carbon">
+      <body className="carbon min-h-screen flex flex-col">
         <header className="fixed top-0 left-0 z-[1000] w-full h-[100px]">
           <NavBar />
         </header>

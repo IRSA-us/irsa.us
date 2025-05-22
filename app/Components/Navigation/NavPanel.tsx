@@ -24,7 +24,7 @@ const pages = [
       href: `/experts/${engineer.id}`,
     })),
   },
-  { label: "Administrators", href: "/admins" },
+  { label: "Administrators", href: "/administrators" },
   { label: "Media & Publications", href: "/media_and_publications" },
   { label: "Contact", href: "/contact" },
   { label: "About", href: "/about" },
