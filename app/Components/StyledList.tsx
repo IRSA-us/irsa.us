@@ -2,7 +2,7 @@ const StyledList = ({
   items,
   separator = ", ",
   conjunction = "and",
-  conjunction2 = "and",
+  conjunction2 = " and ",
   inverted = false,
 }: {
   items: string[];

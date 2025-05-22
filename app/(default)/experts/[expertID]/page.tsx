@@ -2,6 +2,7 @@ import { FaUserGraduate } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineBadge } from "react-icons/md";
 import { FcViewDetails } from "react-icons/fc";
+import { FaGear } from "react-icons/fa6";
 
 import Picture from "@/app/Components/Picture";
 import engineerData from "../../../data/engineers.json";
@@ -57,10 +58,16 @@ const ExpertPage = async ({ params }: Props) => {
               <Tint alpha={0.4} />
             </div>
 
-            <div className="flex flex-col gap-7 font-bold text-2xl pt-10">
+            <div className="flex flex-col w-3/10 gap-7 text-2xl pt-10">
               <div className="flex gap-5 items-center">
-                <MdOutlineBadge className="text-secondary" size={30} />
-                <p>
+                <div className="w-5/100">
+                  <MdOutlineBadge
+                    className="text-secondary"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
+
+                <div className="font-bold text-[28px] w-95/100">
                   {expert.titles && (
                     <StyledList
                       items={expert.titles}
@@ -69,11 +76,16 @@ const ExpertPage = async ({ params }: Props) => {
                       inverted
                     />
                   )}
-                </p>
+                </div>
               </div>
               <div className="flex gap-5 items-center">
-                <FaUserGraduate className="text-secondary ml-[3px] mr-[2px]" />
-                <p>
+                <div className="w-5/100">
+                  <FaUserGraduate
+                    className="text-secondary"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
+                <div className="font-bold w-95/100">
                   {expert.degrees && (
                     <StyledList
                       items={expert.degrees}
@@ -82,23 +94,54 @@ const ExpertPage = async ({ params }: Props) => {
                       inverted
                     />
                   )}
-                </p>
+                </div>
               </div>
 
               <div className="flex gap-5 items-center">
-                <HiOutlineMail className="text-secondary" size={30} />
+                <div className="w-5/100">
+                  <HiOutlineMail
+                    className="text-secondary"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
                 <p>{expert.email}</p>
               </div>
               {expert.CV && (
                 <div className="flex gap-5 items-center">
-                  <FcViewDetails className="text-secondary" size={30} />
-                  <Link
-                    href={`/staff/engineer/${expert.id}/${expert.CV}`}
-                    target="_blank"
-                    className="hover:underline"
-                  >
-                    CV
-                  </Link>
+                  <div className="w-5/100">
+                    <FcViewDetails
+                      className="text-secondary items-center"
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  </div>
+                  <div className="w-95/100">
+                    <Link
+                      href={`/staff/engineer/${expert.id}/${expert.CV}`}
+                      target="_blank"
+                      className="hover:underline"
+                    >
+                      CV
+                    </Link>
+                  </div>
+                </div>
+              )}
+              {expert.specialties && (
+                <div className="flex gap-5">
+                  <div className="w-5/100">
+                    <FaGear
+                      className="text-secondary mt-[5px]"
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  </div>
+
+                  <div className="w-95/100">
+                    <StyledList
+                      items={expert.specialties}
+                      conjunction=""
+                      conjunction2=", "
+                      inverted
+                    />
+                  </div>
                 </div>
               )}
             </div>

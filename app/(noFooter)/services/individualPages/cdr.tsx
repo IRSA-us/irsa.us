@@ -37,20 +37,23 @@ const cdr = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-10">
-          <p className="w-full lg:w-5/10 h-auto text-lg">
-            The Bosch Crash Data Retrieval System is a proven tool that allows
-            Collision Reconstructionists the opportunity to{" "}
-            <StyledList items={["image"]} /> crucial crash data parameters from
-            a vehicle that has been in an accident. This crash data, which is
-            stored in the vehicle’s airbag control module, may be used to make
-            informed decisions about the accident based on the crash data "
-            <StyledList items={["imaged"]} />" from the vehicle in question.
-            <br />
-            <br />
-            Crash Data Recording possesses a proven track record of
-            admissibility at trial, providing{" "}
-            <StyledList items={["valuable crash evidence"]} /> such as:
-            <ul className="list-disc pl-5 py-7 font-bold">
+          <div className="flex flex-col w-full lg:w-5/10">
+            <p className="h-auto text-lg">
+              The Bosch Crash Data Retrieval System is a proven tool that allows
+              Collision Reconstructionists the opportunity to{" "}
+              <StyledList items={["image"]} /> crucial crash data parameters
+              from a vehicle that has been in an accident. This crash data,
+              which is stored in the vehicle’s airbag control module, may be
+              used to make informed decisions about the accident based on the
+              crash data "
+              <StyledList items={["imaged"]} />" from the vehicle in question.
+              <br />
+              <br />
+              Crash Data Recording possesses a proven track record of
+              admissibility at trial, providing{" "}
+              <StyledList items={["valuable crash evidence"]} /> such as:
+            </p>
+            <ul className="list-disc pl-5 py-7 font-bold text-lg">
               {[
                 "Pre-crash vehicle data",
                 "Vehicle speed",
@@ -66,7 +69,8 @@ const cdr = () => {
                 </li>
               ))}
             </ul>
-          </p>
+          </div>
+
           <Picture
             src="/image/services/cdr/cdr2.jpg"
             alt="Broken High Heels"

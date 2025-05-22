@@ -16,7 +16,8 @@
             "name": "Bob Malek",
             "titles": ["Senior Forensic Scientist", "Deputy"],
             "degrees": ["B.S.", "M.S.", "J.D."],
-            "email": "bmalek@irsa.us"
+            "email": "bmalek@irsa.us",
+            "specialties": ["Criminal Proceedings", "Accident Reconstruction", "EDR"]
         },
         {
             "id": "elisa-capello",
@@ -24,7 +25,8 @@
             "name": "Elisa Solomon Capello",
             "titles": ["Senior Vocational Analyst"],
             "degrees": ["A.A.", "B.A.", "M.S."],
-            "email": "esolomon@irsa.us"
+            "email": "esolomon@irsa.us",
+            "specialties": ["LoE & Vocational Analyses"]
         },
         {
             "id": "ricardo-mejia",
@@ -32,7 +34,8 @@
             "name": "Ricardo Mejia",
             "titles": ["Senior Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "ricardo@irsa.us"
+            "email": "ricardo@irsa.us",
+            "specialties": ["Accident Reconstruction", "Premises Liability", "Simulations"]
         },
         {
             "id": "wei-chao",
@@ -40,7 +43,8 @@
             "name": "Wei Chao",
             "titles": ["Senior Forensic Scientist"],
             "degrees": ["B.S.", "M.S."],
-            "email": "wchao@irsa.us"
+            "email": "wchao@irsa.us",
+            "specialties": ["Accident Reconstruction", "Human Factors", "Premises Liability", "EDR"]
         },
         {
             "id": "ban-choi",
@@ -48,7 +52,8 @@
             "name": "Ban Choi",
             "titles": ["Senior Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "bchoi@irsa.us"
+            "email": "bchoi@irsa.us",
+            "specialties": ["Accident Reconstruction", "Simulations", "Biomechanics", "EDR"]
         },
         {
             "id": "jorge-garcia",
@@ -56,7 +61,8 @@
             "name": "Jorge Garcia",
             "titles": ["Senior Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "jgarcia@irsa.us"
+            "email": "jgarcia@irsa.us",
+            "specialties": ["Accident Reconstruction", "Premises Liability", "EDR"]
         },
         {
             "id": "jaime-garcia",
@@ -64,7 +70,9 @@
             "name": "Jaime Garcia",
             "titles": ["Senior Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "jaime.garcia@irsa.us"
+            "email": "jaime.garcia@irsa.us",
+            "specialties": ["Accident Reconstruction", "Premises Liability"],
+            "CV": "CV - Jaime Garcia - May 2025.pdf"
         },
         {
             "id": "librado-mancilla",
@@ -72,7 +80,9 @@
             "name": "Librado Mancilla",
             "titles": ["Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "lmancilla@irsa.us"
+            "email": "lmancilla@irsa.us",
+            "specialties": ["Animations", "Accident Reconstruction", "Human Factors", "Biomechanics", "EDR"],
+            "CV": "CV - Librado Mancilla - May 2025.pdf"
         },
         {
             "id": "daniel-vatcher",
@@ -96,7 +106,8 @@
             "name": "Alex Capello",
             "titles": ["Staff Video Analyst"],
             "degrees": ["B.S.", "M.A."],
-            "email": "acapello@irsa.us"
+            "email": "acapello@irsa.us",
+            "specialties": ["Photometrics", "Videometrics"]
         },
         {
             "id": "ricardo-esquivel",
@@ -112,7 +123,8 @@
             "name": "Savannah Larmon",
             "titles": ["Associate Forensic Scientist"],
             "degrees": ["B.S."],
-            "email": "s.larmon@irsa.us"
+            "email": "s.larmon@irsa.us",
+            "specialties": ["Premises Liability", "EDR"]
         },
         {
             "id": "christian-dermanuelian",
@@ -120,7 +132,8 @@
             "name": "Christian DerManuelian",
             "titles": ["Staff Computer Scientist"],
             "degrees": ["B.S."],
-            "email": "cdermanuelian@irsa.us"
+            "email": "cdermanuelian@irsa.us",
+            "specialties": ["Digital Forensics", "Drone Piloting", "EDR"]
         },
         {
             "id": "malcolm",

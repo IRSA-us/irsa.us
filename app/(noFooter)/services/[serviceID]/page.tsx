@@ -24,10 +24,20 @@ const ServicePage = async ({ params }: Props) => {
   const services: Service[] = JSON.parse(serviceData).services;
   const service = services.find((s) => s.serviceID === serviceID);
 
+  if (!service)
+    return (
+      <div className="w-screen h-screen flex items-center justify-center">
+        <h2 className="text-4xl">
+          <span className="text-secondary font-bold">Error 404 </span>
+          Service Not Found: <span className="underline">{serviceID}</span>
+        </h2>
+      </div>
+    );
+
   const serviceTitle = service?.name;
   const serviceSubTitle = service?.subtitle;
   const mainImageFP = "/image/services/" + serviceID + "/main.jpg";
-  const PageContent = serviceComponents[serviceID];
+  const PageContent = serviceComponents[service.serviceID];
 
   return (
     <>

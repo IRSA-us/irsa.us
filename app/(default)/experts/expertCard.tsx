@@ -8,6 +8,7 @@ export interface Expert {
   name: string;
   titles?: string[];
   hidden?: boolean;
+  specialties?: string[];
 }
 
 interface Props {
@@ -18,7 +19,7 @@ interface Props {
 
 const ExpertCard = ({ expert, disabled, onClick }: Props) => {
   const linkStyles =
-    "overflow-hidden relative w-full md:w-47/100 lg:w-3/10 flex flex-col items-center border-2 rounded-3xl shadow-[0_0_10px_white]";
+    "overflow-hidden relative w-full md:w-47/100 lg:w-3/10 flex flex-col items-center border-2 rounded-3xl shadow-[0_0_10px_white] pb-5";
   const linkAnimationStyles =
     "hover:border-[var(--gold)] hover:scale-101 transition-all duration-200 active:duration-500 ease-in-out active:scale-95 transition-transform";
 
@@ -39,10 +40,24 @@ const ExpertCard = ({ expert, disabled, onClick }: Props) => {
       <Tint className="-z-10" alpha={0.5} />
 
       <h1 className="pt-5 text-3xl text-center">{expert.name}</h1>
-      <ul className="pt-2 pb-5 text-lg text-secondary font-bold text-center">
+      <ul className="pt-2 text-lg text-secondary font-bold text-center">
         {expert.titles &&
-          expert.titles.map((title) => <h2 key={title}>{title}</h2>)}
+          expert.titles.map((title) => (
+            <li key={title}>
+              <h2>{title}</h2>
+            </li>
+          ))}
       </ul>
+      {expert.specialties && (
+        <h3 className="pt-2 text-center">
+          {expert.specialties.map((s, i) => (
+            <span key={s}>
+              <span className="italic">{s}</span>
+              {i !== expert.specialties!.length - 1 && <span>, </span>}
+            </span>
+          ))}
+        </h3>
+      )}
     </Link>
   );
 };

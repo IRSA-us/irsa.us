@@ -6,6 +6,98 @@ import StyledList from "@/app/Components/StyledList";
 const misc = () => {
   return (
     <div className="tintedPanel flex flex-col items-center gap-20 py-10 lg:py-15 px-[5%] 2xl:px-[15%]">
+      <h1 className="text-secondary text-4xl text-center">
+        LoE & VOCATIONAL ANALYSES
+      </h1>
+      <div className="flex flex-col gap-10">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
+          <Picture
+            src="/image/services/misc/loe1.jpg"
+            alt="Hurt Neck"
+            override
+            className="w-full lg:w-[47.5%] h-auto"
+          />
+          <p className="w-full lg:w-[47.5%] h-auto text-xl font-bold">
+            In an accident,{" "}
+            <StyledList items={["Loss of wages and capabilities"]} /> refers to
+            the income you would have received from your employer and the skills
+            that you were able to perform. This period includes from the time of
+            the accident to the date of settlement or judgement.
+            <br />
+            <br />
+            We assess an individual’s{" "}
+            <StyledList
+              items={["skills", "abilities", "qualifications"]}
+            />{" "}
+            (pre and post injury) to determine whether he or she can return to
+            work, relocate to a new position, or continue employment at all.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
+          <div className="flex-col w-full lg:w-[47.5%]">
+            <p className="h-auto text-xl font-bold">
+              We calculate <StyledList items={["Loss of income"]} /> due to the
+              subject incident by reviewing medical records, tax forms, pay
+              stubs, retirement package, and researching inflation rates for
+              future projections.
+              <br />
+              <br />
+              We work with all avenues of We calculate{" "}
+              <StyledList items={["Vocations"]} /> such as:
+            </p>
+            <ul className="list-disc pl-5 pt-5">
+              {[
+                {
+                  name: "Labor",
+                  desc: "(Construction, Landscaper, Mechanic, etc)",
+                },
+                {
+                  name: "Education",
+                  desc: "(Teacher, Administrator, Counselor, etc.)",
+                },
+                {
+                  name: "Office Settings",
+                  desc: "(Managers, Sales Associates, etc.)",
+                },
+                {
+                  name: "Warehouses",
+                  desc: "(Factory Workers/Co-Packers, etc)",
+                },
+                { name: "", desc: "Other Types of Employment" },
+              ].map((v) => (
+                <li key={v.name}>
+                  <span className="font-bold text-secondary">{v.name}</span>{" "}
+                  <span className="font-normal">{v.desc}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <Picture
+            src="/image/services/misc/loe2.jpg"
+            alt="Gain vs. Loss Balance"
+            override
+            className="w-full lg:w-[47.5%] h-auto"
+          />
+        </div>
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
+          <Picture
+            src="/image/services/misc/loe3.jpg"
+            alt="Hurt Ankle"
+            override
+            className="w-full lg:w-[47.5%] h-auto"
+          />
+          <p className="w-full lg:w-[47.5%] h-auto text-xl font-bold">
+            We provide a <StyledList items={["detailed written report"]} /> that
+            demonstrates an individual's loss/potential earnings and current
+            monetary capacity. We also include the individual’s employment
+            limitations and/or adeptness.
+          </p>
+        </div>
+      </div>
+
+      <PanelDivider />
+
       <h1 className="text-secondary text-4xl text-center">INVESIGATIONS</h1>
       <div className="flex flex-col lg:flex-row gap-10">
         <Picture
@@ -75,14 +167,14 @@ const misc = () => {
         PRODUCT INTEGRITY & EVALUATION
       </h1>
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col lg:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
           <Picture
             src="/image/services/misc/product.jpg"
             alt="Broken Chair"
             override
-            className="w-full lg:w-5/10 h-auto"
+            className="w-full lg:w-[47.5%] h-auto"
           />
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
+          <p className="w-full lg:w-[47.5%] h-auto text-xl font-bold">
             Successful companies focus on product integrity. In particular,
             sophisticated{" "}
             <StyledList items={["manufacturing quality", "high reliability"]} />{" "}
@@ -97,8 +189,8 @@ const misc = () => {
             reliability. These evaluations are done in our laboratory.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row gap-10">
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
+          <p className="w-full lg:w-[47.5%] h-auto text-xl font-bold">
             Our <StyledList items={["goal"]} /> within product integrity is to
             ensure an item was or was not adequately safe for a specific
             application in a given environment. In parallel, we{" "}
@@ -109,7 +201,7 @@ const misc = () => {
             src="/image/services/misc/product2.jpg"
             alt="Broken High Heels"
             override
-            className="w-full lg:w-5/10 h-auto"
+            className="w-full lg:w-[47.5%] h-auto"
           />
         </div>
       </div>
@@ -118,14 +210,14 @@ const misc = () => {
 
       <h1 className="text-secondary text-4xl text-center">WARNING LABELS</h1>
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col lg:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
           <Picture
             src="/image/services/misc/warning.jpg"
             alt="Broken Chair"
             override
-            className="w-full lg:w-5/10 h-auto"
+            className="w-full lg:w-[47.5%] h-auto"
           />
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
+          <p className="w-full lg:w-[47.5%] h-auto text-xl font-bold">
             Warnings and labels are vital pieces of information that communicate
             a <StyledList items={["hazardous environment"]} />. To warn is to
             place someone on advance notice of a danger or a potential danger.
@@ -153,8 +245,8 @@ const misc = () => {
             of various products.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row gap-10">
-          <p className="w-full lg:w-5/10 h-auto text-xl">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-[5%]">
+          <p className="w-full lg:w-[47.5%] h-auto text-xl">
             Warnings can take many forms. They are not just{" "}
             <StyledList items={["visual"]} />, but also{" "}
             <StyledList items={["auditory"]} /> (sound),{" "}
@@ -183,97 +275,8 @@ const misc = () => {
             src="/image/services/misc/warning2.jpg"
             alt="Broken High Heels"
             override
-            className="w-full lg:w-5/10 h-auto"
+            className="w-full lg:w-[47.5%] h-auto"
           />
-        </div>
-      </div>
-
-      <PanelDivider />
-
-      <h1 className="text-secondary text-4xl text-center">
-        LoE & VOCATIONAL ANALYSES
-      </h1>
-      <div className="flex flex-col gap-10">
-        <div className="flex flex-col lg:flex-row gap-10">
-          <Picture
-            src="/image/services/misc/loe1.jpg"
-            alt="Hurt Neck"
-            override
-            className="w-full lg:w-5/10 h-auto"
-          />
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
-            In an accident,{" "}
-            <StyledList items={["Loss of wages and capabilities"]} /> refers to
-            the income you would have received from your employer and the skills
-            that you were able to perform. This period includes from the time of
-            the accident to the date of settlement or judgement.
-            <br />
-            <br />
-            We assess an individual’s{" "}
-            <StyledList
-              items={["skills", "abilities", "qualifications"]}
-            />{" "}
-            (pre and post injury) to determine whether he or she can return to
-            work, relocate to a new position, or continue employment at all.
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-10">
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
-            We calculate <StyledList items={["Loss of income"]} /> due to the
-            subject incident by reviewing medical records, tax forms, pay stubs,
-            retirement package, and researching inflation rates for future
-            projections.
-            <br />
-            <br />
-            We work with all avenues of We calculate{" "}
-            <StyledList items={["Vocations"]} /> such as:
-            <ul className="list-disc pl-5 pt-5">
-              {[
-                {
-                  name: "Labor",
-                  desc: "(Construction, Landscaper, Mechanic, etc)",
-                },
-                {
-                  name: "Education",
-                  desc: "(Teacher, Administrator, Counselor, etc.)",
-                },
-                {
-                  name: "Office Settings",
-                  desc: "(Managers, Sales Associates, etc.)",
-                },
-                {
-                  name: "Warehouses",
-                  desc: "(Factory Workers/Co-Packers, etc)",
-                },
-                { name: "", desc: "Other Types of Employment" },
-              ].map((v) => (
-                <li key={v.name}>
-                  <span className="font-bold text-secondary">{v.name}</span>{" "}
-                  <span className="font-normal">{v.desc}</span>
-                </li>
-              ))}
-            </ul>
-          </p>
-          <Picture
-            src="/image/services/misc/loe2.jpg"
-            alt="Gain vs. Loss Balance"
-            override
-            className="w-full lg:w-5/10 h-auto"
-          />
-        </div>
-        <div className="flex flex-col lg:flex-row gap-10">
-          <Picture
-            src="/image/services/misc/loe3.jpg"
-            alt="Hurt Ankle"
-            override
-            className="w-full lg:w-5/10 h-auto"
-          />
-          <p className="w-full lg:w-5/10 h-auto text-xl font-bold">
-            We provide a <StyledList items={["detailed written report"]} /> that
-            demonstrates an individual's loss/potential earnings and current
-            monetary capacity. We also include the individual’s employment
-            limitations and/or adeptness.
-          </p>
         </div>
       </div>
     </div>
