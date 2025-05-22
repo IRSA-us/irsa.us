@@ -14,10 +14,10 @@
             "id": "bob-malek",
             "contentID": "BobMalek",
             "name": "Bob Malek",
-            "titles": ["Senior Forensic Scientist", "Deputy"],
+            "titles": ["Deputy Managing Scientist", "Senior Forensic Scientist"],
             "degrees": ["B.S.", "M.S.", "J.D."],
             "email": "bmalek@irsa.us",
-            "specialties": ["Criminal Proceedings", "Accident Reconstruction", "EDR"]
+            "specialties": ["High Profile Criminal and Civil Proceedings", "Accident Reconstruction", "Human Factors", "Biomechanics", "Safety Analysis", "EDR"]
         },
         {
             "id": "elisa-capello",

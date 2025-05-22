@@ -1,7 +1,7 @@
 import engineerData from "../../data/engineers.json";
 import Tint from "@/app/Components/Tint";
 import Image from "next/image";
-import ExpertCards from "./ExpertCards";
+import Body from "./Body";
 
 const page = async () => {
   const experts = engineerData.engineers;
@@ -29,7 +29,7 @@ const page = async () => {
         <h1 className="text-7xl z-10">Experts</h1>
       </div>
 
-      <ExpertCards experts={experts} />
+      <Body experts={experts} />
     </>
   );
 };

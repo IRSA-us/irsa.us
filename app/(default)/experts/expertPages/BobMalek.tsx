@@ -3,68 +3,77 @@ import StyledList from "@/app/Components/StyledList";
 
 const BobMalek = () => {
   return (
-    <div className="flex flex-col gap-10 px-[25%] items-center">
+    <div className="flex flex-col gap-10 px-0 md:px-[10%] lg:px-[15%] 2xl:px-[25%] items-center">
       <p className="text-center text-xl">
-        Mr. Malek’s experience involves working as a Forensic Scientist on a
-        variety of{" "}
-        <StyledList items={["criminal", "civil"]} conjunction2=" and " /> cases.
-        Mr. Malek applies his knowledge of Physics, Dynamics, Kinematics,
-        Construction Safety, Quality Assurance, Strength of Materials, Risk and
-        Safety, and Material Science to the field of{" "}
+        Bob Malek serves as the{" "}
+        <StyledList items={["Deputy Managing Scientist"]} /> at the Institute of
+        Risk and Safety Analyses (IRSA), where he leads the forensic
+        investigation and analysis of high-profile civil and criminal matters.
+        With <StyledList items={["over 13 years"]} /> of specialized experience
+        in
         <RouteLink
           href="/services/accident_recon"
-          label="Accident Reconstruction"
+          label="accident reconstruction"
+          endspc={false}
+        />
+        ,{" "}
+        <RouteLink
+          href="/services/biomechanics"
+          label="biomechanics"
+          endspc={false}
+        />
+        ,{" "}
+        <RouteLink
+          href="/services/human_factors"
+          label="human factors"
+          endspc={false}
+        />
+        , and safety engineering, Mr. Malek has been qualified as an expert and
+        testified in more than 90 trials across jurisdictions.
+      </p>
+
+      <p className="text-center text-xl">
+        Mr. Malek holds a <StyledList items={["Juris Doctor"]} /> from the Santa
+        Barbara College of Law and is a{" "}
+        <StyledList items={["member of the California Bar"]} />.
+        <br />
+        <br />
+        He also earned a{" "}
+        <StyledList
+          items={["Master of Science", "Engineering Management"]}
+          conjunction2=" in "
         />{" "}
-        as it relates to transportation accidents, industrial accidents,
-        <RouteLink
-          href="/services/criminal"
-          label="criminal investigations"
-          endspc={false}
-        />
-        , and{" "}
-        <RouteLink
-          href="/services/premises"
-          label="premises liability"
-          endspc={false}
-        />
-        . Mr. Malek employs Accident Reconstruction to asses alternative designs
-        and safety practices and procedures as they relate to post-accident
-        evaluation. Mr. Malek is able to analyze how, where, and why systems
-        fail; the type of failure; and how to best correct or improve upon the
-        system.{" "}
+        and a{" "}
+        <StyledList
+          items={["Bachelor of Science", "Civil Engineering"]}
+          conjunction2=" in "
+        />{" "}
+        from California State University, Northridge. This rare combination of
+        legal acumen and technical expertise enables him to deliver
+        comprehensive forensic evaluations that integrate scientific rigor with
+        legal insight.
       </p>
 
       <p className="text-center text-xl">
-        Mr. Malek earned his{" "}
-        <StyledList items={["Bachelor of Science in Civil Engineering"]} /> and
-        later obtained his{" "}
-        <StyledList items={["Master of Science in Engineering Management"]} />{" "}
-        (with an emphasis on Safety Engineering) from the California State
-        University, Northridge. His area of study included Physics, Dynamics,
-        Strength of Materials, Risk and Safety, Quality Assurance, Manufacturing
-        Standards, Construction Safety, Computer – Aided Design, and Material
-        Science.{" "}
+        Mr. Malek’s forensic work spans transportation accidents, industrial
+        incidents, criminal investigations, and premises liability. He applies
+        principles of physics, dynamics, material science, and risk analysis to{" "}
+        <StyledList items={["reconstruct accidents", "assess failures"]} /> in
+        complex systems. His analysis routinely involves quantifying impact
+        forces, vehicle dynamics, occupant kinematics, and structural
+        deformation. In premises liability evaluations, he draws upon his
+        extensive knowledge of building codes and safety regulations—including
+        CBC, IBC, UBC, ANSI, and OSHA standards—to determine compliance and
+        hazard foreseeability.
       </p>
 
       <p className="text-center text-xl">
-        Mr. Malek applies his knowledge of Physics and Engineering to the field
-        of Accident Reconstruction as it relates to transportation accidents,
-        criminal investigations, and premises liability cases. For{" "}
-        <StyledList items={["traffic accidents"]} />, he uses the
-        problem-solving skills acquired during his undergraduate and graduate
-        years to analyze accidents, and to determine information vital to the
-        reconstruction of the accident, such as the angle of impact, crush
-        depths, change in velocity, G-forces, speed of the vehicles involved,
-        and the accelerations and forces experience as a result of a collision.{" "}
-      </p>
-
-      <p className="text-center text-xl">
-        He has been involved in over{" "}
-        <StyledList items={["700 forensics investigations"]} /> including
-        automotive, bicycle, and pedestrian slip and falls and cases involving
-        building and safety codes. Additionally, Mr. Malek is{" "}
-        <StyledList items={["OSHA certified"]} /> and has extensive knowledge of
-        construction safety and safety requirements.{" "}
+        Mr. Malek employs a systems-based methodology to determine how and why
+        failures occur, the nature of those failures, and how they could have
+        been prevented or mitigated through alternative design or practice. He
+        is also a <StyledList items={["principal instructor"]} /> at IRSA, where
+        he teaches courses in accident reconstruction, human factors, and injury
+        biomechanics.
       </p>
     </div>
   );
