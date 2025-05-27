@@ -22,7 +22,7 @@ const Content = ({ expert }: Props) => {
 
   return (
     <>
-      <div className="mt-[125px] mx-10">
+      <div className="mt-[125px] mx-2 lg:mx-10">
         <div className="tintedPanel p-10 flex flex-col items-center">
           <h1 className="text-center text-5xl">
             {expert.name}
@@ -30,7 +30,7 @@ const Content = ({ expert }: Props) => {
           </h1>
         </div>
       </div>
-      <div className="mt-10 mx-10">
+      <div className="mt-10 mx-2 lg:mx-10">
         <div className="tintedPanel p-10 flex flex-col gap-10">
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 items-center lg:items-start justify-center">
             <div className="relative w-full md:w-[70%] lg:w-5/10 xl:w-4/10 2xl:w-[25%] aspect-[4/5] h-auto">
