@@ -39,6 +39,7 @@ const Content = ({ expert }: Props) => {
                 alt={`${expert.name} Headshot`}
                 override
                 className="absolute z-10 w-full h-full"
+                priority
               />
               <Tint alpha={0.4} />
             </div>

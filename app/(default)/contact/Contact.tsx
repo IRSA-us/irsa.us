@@ -6,13 +6,14 @@ import { useState } from "react";
 import engineerData from "../../data/engineers.json";
 
 const Contact = () => {
-  const [recipient, setRecipient] = useState("carol@irsa.us");
+  const [recipient, setRecipient] = useState("expert@irsa.us");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
 
   const emails = engineerData.engineers
     .map((e) => e.email)
-    .filter((email) => email.includes("@"));
+    .filter((email) => email.includes("@"))
+    .filter((email) => !email.includes("kenneth"));
 
   return (
     <div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-0">
@@ -22,7 +23,12 @@ const Contact = () => {
 
       <div className="w-full mt-2 lg:w-[55%] flex flex-col items-center gap-5 py-5">
         <Dropdown
-          items={["carol@irsa.us", "olivia@irsa.us", "divider", ...emails]}
+          items={[
+            "expert@irsa.us - (General Inquiries)",
+            "kenneth@irsa.us - (Chief Forensic Scientist)",
+            "divider",
+            ...emails,
+          ]}
           setInput={setRecipient}
           placeholder="Recipient"
           className="w-full lg:w-8/10"

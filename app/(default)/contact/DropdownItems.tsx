@@ -51,7 +51,7 @@ const DropdownItems = ({
               <button
                 onClick={() => {
                   setDisplay(i);
-                  setInput(i);
+                  setInput(i.split(" - ")[0]);
                   setClicked(false);
                 }}
               >

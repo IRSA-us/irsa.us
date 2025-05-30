@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NavBar from "../Components/Navigation/NavBar";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default async function DefaultLayout({
           <NavBar />
         </header>
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );

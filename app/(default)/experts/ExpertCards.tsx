@@ -22,8 +22,10 @@ const ExpertCards = ({ experts, searchParams }: Props) => {
           .includes(query.replaceAll(".", ""))
       ) ||
       expert.email.toLowerCase().includes(query) ||
-      expert.specialties?.some((specialty) =>
-        specialty.toLowerCase().includes(query)
+      expert.specialties?.some(
+        (specialty) =>
+          specialty.toLowerCase().includes(query) ||
+          expert.keywords?.toLowerCase().includes(query)
       )
   );
 

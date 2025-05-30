@@ -14,6 +14,7 @@ export interface Expert {
   specialties?: string[];
   CV?: string;
   hidden?: boolean;
+  keywords?: string;
 }
 
 interface Props {
