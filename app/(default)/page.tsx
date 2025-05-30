@@ -48,7 +48,7 @@ export default function Home() {
 }
 
 export const metadata: Metadata = {
-  title: "IRSA",
+  title: "Institute of Risk and Safety Analyses",
   description:
     "Institute of Risk and Safety Analysis. Expert Witness. Expert Witnesses. Forensics. Forensic Science. Accident Reconstruction.",
 };

@@ -6,6 +6,7 @@ interface Props {
   className?: string;
   override?: boolean;
   unoptimized?: boolean;
+  priority?: boolean;
 }
 
 const Picture = ({
@@ -14,6 +15,7 @@ const Picture = ({
   className = "",
   override = false,
   unoptimized = false,
+  priority = false,
 }: Props) => {
   const defaultClassName = "w-full lg:w-7/10 h-auto";
   return (
@@ -26,6 +28,7 @@ const Picture = ({
         !override && defaultClassName
       } ${className}`}
       unoptimized={unoptimized}
+      priority={priority}
     />
   );
 };

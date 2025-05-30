@@ -9,16 +9,19 @@ const ChristianDerManuelian = () => {
           items={["Bachelor of Science", "Data Science"]}
           conjunction=" in "
         />{" "}
-        with a minor in{" "}
-        <StyledList items={["Computer Science"]} conjunction=" in " /> from the
+        with significant coursework in{" "}
+        <StyledList items={["Computer Science", "Machine Learning"]} /> from the
         University of California, San Diego.
       </p>
 
       <p className="text-center text-xl">
         He possesses a strong ability to program, build, diagnose, and analyze
         all types of computers, digital devices, and computer systems. He can
-        extract and analyze <StyledList items={["metadata"]} /> from devices,
-        digital files, etc.
+        extract and analyze{" "}
+        <StyledList
+          items={["metadata", "lost/deleted files", "forensic evidence"]}
+        />{" "}
+        from devices, systems, files, etc.
       </p>
 
       <p className="text-center text-xl">

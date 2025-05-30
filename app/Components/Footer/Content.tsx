@@ -11,7 +11,7 @@ const Content = () => {
         <p>5324 Canoga Avenue</p>
         <p>Woodland Hills, CA. 91364</p>
         <br />
-        <p>carol@irsa.us</p>
+        <p>expert@irsa.us</p>
         <p>818.348.1133</p>
       </div>
       <div className="w-[1px] self-stretch bg-[var(--primary)] opacity-50" />

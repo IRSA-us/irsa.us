@@ -45,7 +45,8 @@
       "specialties": [
         "Accident Reconstruction",
         "Simulations"
-      ]
+      ],
+      "CV": "CV - Ricardo Mejia - May 2025.pdf"
     },
     {
       "id": "wei-chao",
@@ -57,9 +58,11 @@
       "specialties": [
         "Accident Reconstruction",
         "Human Factors",
+        "Safety Analysis",
         "EDR"
       ],
-      "CV": "CV - Wei Chao - May 2025.pdf"
+      "CV": "CV - Wei Chao - July 2025.pdf",
+      "keywords": "crush analysis, momentum balance, video analysis, CDR/EDR data analysis, airbag deployment, drag factor assessments, critical speed yaw, traffic signal phases and timing, pedestrian throw distance, line of sight, visual cues, Perception-Response Time (PRT), g-force, photogrammetry, OSHA, ANSI, ASTM, safeguarding, engineering material fracture and/or failure, FARO scans, Faro Zone 3D, Virtual Crash, 3D Max, AutoCAD, re-enactment"
     },
     {
       "id": "ban-choi",
@@ -93,7 +96,7 @@
       "titles": ["Senior Forensic Scientist"],
       "degrees": ["B.S."],
       "email": "jaime.garcia@irsa.us",
-      "specialties": ["Accident Reconstruction", "Premises Liability"],
+      "specialties": ["Accident Reconstruction", "Premises Liability", "EDR", "Friction Slip Tester"],
       "CV": "CV - Jaime Garcia - May 2025.pdf"
     },
     {

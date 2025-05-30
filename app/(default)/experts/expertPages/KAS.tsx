@@ -1,3 +1,4 @@
+import Picture from "@/app/Components/Picture";
 import RouteLink from "@/app/Components/RouteLink";
 
 const KAS = () => {
@@ -26,6 +27,14 @@ const KAS = () => {
         served as an adjunct professor at UCLA, USC, and other universities. He
         was a senior scientist at RAND for 22 and a half years.
       </p>
+
+      <Picture
+        src="/experts/kenneth-a-solomon/p1.jpeg"
+        alt="Crash Simulation"
+        override
+        className="w-6/10 h-full rounded-[8px]"
+        unoptimized
+      />
     </div>
   );
 };

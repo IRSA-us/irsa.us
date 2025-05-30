@@ -2,7 +2,6 @@ import { Service } from "./page";
 import Link from "next/link";
 import Image from "next/image";
 import Tint from "@/app/Components/Tint";
-import { onLeftClick } from "@/app/Components/Interactivity/onLeftClick";
 
 interface Props {
   service: Service;
@@ -15,7 +14,7 @@ const ServicePageLink = ({ service, clicked, onClick }: Props) => {
     <Link
       href={"/services/" + service.serviceID}
       key={service.name}
-      onClick={(e) => onLeftClick(e, onClick)}
+      onClick={() => onClick}
       className={clicked ? "pointer-events-none" : ""}
     >
       <div className="group relative w-full h-[500px] lg:w-[550px] lg:h-[300px] border-1 border-white">
@@ -36,7 +35,7 @@ const ServicePageLink = ({ service, clicked, onClick }: Props) => {
           }`}
         />
         <div
-          className={`hidden group-hover:inline absolute h-full bg-[var(--primary)] opacity-80 transition-[width] duration-0 ${
+          className={`group-hover:inline absolute h-full bg-[var(--primary)] opacity-80 transition-[width] duration-0 ${
             clicked ? "w-full" : "w-0"
           }`}
         />
